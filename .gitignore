@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.local
+
+# Üretilen içerik: her video kendi klasöründe, repoya girmez
+public/content/*
+!public/content/.gitkeep
+
+# Müzik dosyaları (lisanslı, repoya koyma)
+public/music/*
+!public/music/.gitkeep
+
+out/
+.remotion/
+*.log

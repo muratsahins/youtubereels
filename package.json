@@ -1,0 +1,31 @@
+{
+  "name": "youtubereels",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "script": "tsx src/pipeline/script.ts",
+    "voice": "tsx src/pipeline/voice.ts",
+    "assets": "tsx src/pipeline/assets.ts",
+    "render": "tsx src/pipeline/render.ts",
+    "all": "tsx src/pipeline/run.ts",
+    "studio": "remotion studio src/remotion/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.116.0",
+    "@remotion/cli": "^4.0.0",
+    "dotenv": "^16.4.7",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "remotion": "^4.0.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
