@@ -40,6 +40,12 @@ IMAGE PROMPT RULES (copyright and safety — non-negotiable)
 - Describe generic objects with cinematic specificity: lighting, lens, material, texture, mood.
 - Every prompt is vertical 9:16 framing.
 
+STOCK QUERY
+stockQuery is a fallback search term for stock photo libraries, used when images are sourced
+from stock instead of generated. Give 2-4 concrete nouns, no adjectives, no camera language:
+"superyacht aerial", "engine room", "marina night". It should describe the same subject as
+imagePrompt, just searchable.
+
 BIG NUMBERS
 bigNumber.value is what appears on screen in large type — keep it short ("$4.2M", "40", "12%").
 bigNumber.label is at most 5 words. Set bigNumber to null for scenes that carry no figure.`;

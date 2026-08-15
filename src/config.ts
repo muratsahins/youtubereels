@@ -9,7 +9,8 @@ export const ELEVEN_MODEL_ID = process.env.ELEVENLABS_MODEL_ID ?? 'eleven_multil
 
 export const IMAGE_PROVIDER = (process.env.IMAGE_PROVIDER ?? 'placeholder') as
   | 'placeholder'
-  | 'replicate';
+  | 'replicate'
+  | 'pexels';
 
 export const REPLICATE_MODEL = process.env.REPLICATE_MODEL ?? 'black-forest-labs/flux-schnell';
 

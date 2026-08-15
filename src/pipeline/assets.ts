@@ -46,6 +46,55 @@ function placeholderSvg(index: number): string {
 </svg>`;
 }
 
+/** imagePrompt uzun ve sinematik; stok arama için kısa somut bir sorguya indiriyoruz. */
+const STOPWORDS = new Set([
+  'a', 'an', 'the', 'of', 'in', 'on', 'at', 'with', 'and', 'from', 'into',
+  'view', 'shot', 'close', 'macro', 'detail', 'wide', 'aerial', 'interior',
+  'vertical', 'dark', 'cold', 'warm', 'soft', 'deep', 'empty', 'large', 'vast',
+]);
+
+function deriveQuery(imagePrompt: string): string {
+  const firstClause = imagePrompt.split(',')[0] ?? imagePrompt;
+  const words = firstClause
+    .toLowerCase()
+    .replace(/[^a-z\s]/g, ' ')
+    .split(/\s+/)
+    .filter((word) => word.length > 2 && !STOPWORDS.has(word));
+  return words.slice(0, 3).join(' ') || 'luxury';
+}
+
+type PexelsResponse = {
+  photos?: { src?: { original?: string; large2x?: string } }[];
+};
+
+async function pexelsImage(query: string, offset: number): Promise<Buffer> {
+  const apiKey = requireEnv('PEXELS_API_KEY');
+
+  const url =
+    `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}` +
+    `&orientation=portrait&per_page=15`;
+
+  const response = await fetch(url, { headers: { Authorization: apiKey } });
+  if (!response.ok) {
+    throw new Error(`Pexels ${response.status}: ${await response.text()}`);
+  }
+
+  const json = (await response.json()) as PexelsResponse;
+  const photos = json.photos ?? [];
+  if (photos.length === 0) {
+    throw new Error(`Pexels "${query}" için sonuç döndürmedi. stockQuery'yi genelleştir.`);
+  }
+
+  // Aynı sorgu birden fazla sahnede çıkarsa aynı fotoğrafı iki kez kullanmayalım.
+  const photo = photos[offset % photos.length]!;
+  const source = photo.src?.original ?? photo.src?.large2x;
+  if (!source) throw new Error('Pexels sonucunda kullanılabilir görsel yok.');
+
+  const image = await fetch(source);
+  if (!image.ok) throw new Error(`Görsel indirilemedi: ${image.status}`);
+  return Buffer.from(await image.arrayBuffer());
+}
+
 type Prediction = {
   id: string;
   status: 'starting' | 'processing' | 'succeeded' | 'failed' | 'canceled';
@@ -114,21 +163,34 @@ export async function generateAssets(slug: string): Promise<AssetManifest> {
   for (const [index, scene] of script.scenes.entries()) {
     const stem = `scene-${String(index + 1).padStart(2, '0')}`;
 
-    if (IMAGE_PROVIDER === 'replicate') {
-      const file = `${stem}.png`;
-      const target = path.join(outDir, file);
-      if (fs.existsSync(target)) {
-        console.log(`[assets] ${file} zaten var, atlanıyor`);
-      } else {
-        console.log(`[assets] ${file} üretiliyor…`);
-        fs.writeFileSync(target, await replicateImage(scene.imagePrompt));
-      }
-      manifest.scenes.push({ index, file });
-    } else {
+    if (IMAGE_PROVIDER === 'placeholder') {
       const file = `${stem}.svg`;
       fs.writeFileSync(path.join(outDir, file), placeholderSvg(index), 'utf8');
       manifest.scenes.push({ index, file });
+      continue;
     }
+
+    const file = `${stem}.png`;
+    const target = path.join(outDir, file);
+
+    if (fs.existsSync(target)) {
+      console.log(`[assets] ${file} zaten var, atlanıyor`);
+      manifest.scenes.push({ index, file });
+      continue;
+    }
+
+    if (IMAGE_PROVIDER === 'replicate') {
+      console.log(`[assets] ${file} üretiliyor (flux)…`);
+      fs.writeFileSync(target, await replicateImage(scene.imagePrompt));
+    } else {
+      // Eski senaryolarda stockQuery alanı olmayabilir; prompt'tan türetiyoruz.
+      const stockQuery =
+        (scene as { stockQuery?: string }).stockQuery ?? deriveQuery(scene.imagePrompt);
+      console.log(`[assets] ${file} aranıyor (pexels: "${stockQuery}")…`);
+      fs.writeFileSync(target, await pexelsImage(stockQuery, index));
+    }
+
+    manifest.scenes.push({ index, file });
   }
 
   writeJson(path.join(dir, 'assets.json'), manifest);

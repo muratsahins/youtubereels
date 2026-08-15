@@ -19,6 +19,9 @@ export const SceneSchema = z.object({
     .describe(
       'Görsel üretim prompt\'u. Marka adı, logo, ünlü ismi veya tanınabilir yüz İÇERMEZ.',
     ),
+  stockQuery: z
+    .string()
+    .describe('Stok görsel arama sorgusu: 2-4 somut kelime, sıfat yok. Örn. "superyacht aerial"'),
   motion: MotionSchema,
   bigNumber: BigNumberSchema.nullable().describe('Rakam yoksa null'),
 });
