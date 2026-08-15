@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "script": "tsx src/pipeline/script.ts",
+    "prompts": "tsx src/pipeline/prompts.ts",
     "voice": "tsx src/pipeline/voice.ts",
     "assets": "tsx src/pipeline/assets.ts",
     "render": "tsx src/pipeline/render.ts",

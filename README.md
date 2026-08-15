@@ -132,3 +132,26 @@ minor sürümü sabitler; sürümü düşürme.
   `fallbacks` ve `betas` satırlarını sil.
 - Sahne geçişleri sert kesim. Çapraz geçiş istersen `LuxuryShort.tsx` içindeki `Sequence`
   sınırlarını çakıştırıp `KenBurns`'e opacity interpolasyonu ekle.
+
+## Görselleri elle üretmek (ücretsiz, birebir prompt uyumu)
+
+Replicate API her model için kredi ister, ama **web arayüzü ücretsiz çalıştırmaya izin verir**.
+Kredi yüklemeden API ile birebir aynı sonucu almanın yolu:
+
+```bash
+npm run prompts -- --slug <slug>     # → prompts.txt, kopyala-yapıştır hazır
+```
+
+1. `prompts.txt` dosyasını aç.
+2. https://replicate.com/black-forest-labs/flux-schnell sayfasında her prompt'u çalıştır
+   (`aspect_ratio = 9:16`, `output_format = png`).
+3. Çıkan görselleri `public/content/<slug>/assets/` içine `scene-01.png` … `scene-NN.png`
+   olarak kaydet.
+4. `.env` içinde `IMAGE_PROVIDER=manual` yap, sonra:
+
+```bash
+npm run assets -- --slug <slug>      # eksik dosya varsa isim isim söyler
+npm run render -- --slug <slug>
+```
+
+`manual` sağlayıcı hiçbir API çağrısı yapmaz; sadece dosyaların yerinde olduğunu doğrular.

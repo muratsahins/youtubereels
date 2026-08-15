@@ -15,7 +15,7 @@ import {
 } from '../util/paths';
 
 /** Tüm sahnelere uygulanan ortak görsel imza — kanalın tutarlı bir görünüşü olsun diye. */
-const STYLE_SUFFIX =
+export const STYLE_SUFFIX =
   'cinematic still, dramatic low-key lighting, shallow depth of field, subtle film grain, ' +
   'rich contrast, vertical 9:16 composition, no text, no logos, no watermarks, no visible faces';
 
@@ -159,6 +159,7 @@ export async function generateAssets(slug: string): Promise<AssetManifest> {
   ensureDir(outDir);
 
   const manifest: AssetManifest = { provider: IMAGE_PROVIDER, scenes: [] };
+  const missing: string[] = [];
 
   for (const [index, scene] of script.scenes.entries()) {
     const stem = `scene-${String(index + 1).padStart(2, '0')}`;
@@ -172,6 +173,12 @@ export async function generateAssets(slug: string): Promise<AssetManifest> {
 
     const file = `${stem}.png`;
     const target = path.join(outDir, file);
+
+    if (IMAGE_PROVIDER === 'manual') {
+      if (!fs.existsSync(target)) missing.push(file);
+      manifest.scenes.push({ index, file });
+      continue;
+    }
 
     if (fs.existsSync(target)) {
       console.log(`[assets] ${file} zaten var, atlanıyor`);
@@ -191,6 +198,14 @@ export async function generateAssets(slug: string): Promise<AssetManifest> {
     }
 
     manifest.scenes.push({ index, file });
+  }
+
+  if (missing.length > 0) {
+    throw new Error(
+      `${missing.length} görsel eksik:\n  ${missing.join('\n  ')}\n\n` +
+        `Bunları şu klasöre koy: ${outDir}\n` +
+        `Prompt'lar için: npm run prompts -- --slug ${slug}`,
+    );
   }
 
   writeJson(path.join(dir, 'assets.json'), manifest);
