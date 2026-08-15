@@ -105,7 +105,7 @@ type Prediction = {
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-async function replicateImage(prompt: string): Promise<Buffer> {
+async function replicateAttempt(prompt: string): Promise<Buffer> {
   const token = requireEnv('REPLICATE_API_TOKEN');
   const headers = {
     Authorization: `Bearer ${token}`,
@@ -164,6 +164,29 @@ async function replicateImage(prompt: string): Promise<Buffer> {
   const image = await fetch(output);
   if (!image.ok) throw new Error(`Görsel indirilemedi: ${image.status}`);
   return Buffer.from(await image.arrayBuffer());
+}
+
+/**
+ * Replicate zaman zaman tahminleri sunucu tarafında düşürüyor (örn. E9828).
+ * Bunlar geçici; aynı istek birkaç saniye sonra sorunsuz çalışıyor. Tek bir
+ * hıçkırık 8 görsellik partiyi düşürmesin diye sahne bazında tekrar deniyoruz.
+ */
+async function replicateImage(prompt: string): Promise<Buffer> {
+  let lastError: unknown;
+
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      return await replicateAttempt(prompt);
+    } catch (error) {
+      lastError = error;
+      if (attempt === 3) break;
+      const message = error instanceof Error ? error.message : String(error);
+      console.log(`[assets]   deneme ${attempt} başarısız (${message}); tekrar deneniyor…`);
+      await sleep(attempt * 5000);
+    }
+  }
+
+  throw lastError;
 }
 
 export async function generateAssets(slug: string): Promise<AssetManifest> {
