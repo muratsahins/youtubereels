@@ -62,6 +62,17 @@ Compose the branding out instead of asking for it to be absent: angle the surfac
 camera, put it in shadow, crop to a different part of the object, or shoot the back. A watch
 reads as expensive from its bezel, bracelet and case profile; the dial is not required.
 
+IMAGE PROMPT RULES (readable subject, dark frame)
+Every prompt needs a subject a viewer can name in one glance. A macro of a smooth painted
+panel or a plain wall is not a subject — it returns an abstract blur that communicates nothing
+and, when it comes back pale, leaves the white captions with almost no contrast. Crop tight on
+something with an identifiable shape instead: a nose and cockpit glass rather than a fuselage
+panel, an engine intake rather than a cowling surface.
+Give every prompt a source of darkness — night, a dim interior, shadow falling across the
+subject, a single hard light. The finished frame carries white captions across its lower third
+and a large number card in its upper third, so a bright evenly-lit image is a defect even when
+it is a good photograph.
+
 STOCK QUERY
 stockQuery is a fallback search term for stock photo libraries, used when images are sourced
 from stock instead of generated. Give 2-4 concrete nouns, no adjectives, no camera language:
