@@ -46,14 +46,17 @@ export const KenBurns: React.FC<Props> = ({ src, motion, durationInFrames }) => 
           objectFit: 'cover',
           transform: transformFor(motion, progress),
           transformOrigin: 'center center',
-          // Ortak derecelendirme. Farklı kaynaklardan gelen görseller (stok
-          // fotoğraf, AI, arşiv) tek bir kanal kimliğine oturuyor; ayrıca
-          // koyulaştırma beyaz altyazıyı her zeminde okunur kılıyor.
-          filter: 'saturate(0.5) contrast(1.12) brightness(0.62)',
+          // Ortak derecelendirme: farklı kaynaklardan gelen görseller (AI, stok,
+          // arşiv) tek bir kanal kimliğine oturuyor.
+          //
+          // Hafif tutuluyor. Altyazı okunabilirliğini Vignette'in alt gradyanı
+          // zaten sağlıyor; buradan da karartmak, gece sahnelerinde gölge
+          // detayını (uzaktaki kıyı ışıkları, tek yanan pencere) yok ediyor.
+          filter: 'saturate(0.66) contrast(1.06) brightness(0.84)',
         }}
       />
-      {/* Soğuk lacivert yıkama: parlak gündüz fotoğraflarını gece tonuna çeker. */}
-      <AbsoluteFill style={{ backgroundColor: 'rgba(9,13,26,0.34)' }} />
+      {/* Soğuk lacivert yıkama: parlak gündüz görsellerini gece tonuna çeker. */}
+      <AbsoluteFill style={{ backgroundColor: 'rgba(9,13,26,0.16)' }} />
     </AbsoluteFill>
   );
 };
