@@ -46,8 +46,14 @@ export const KenBurns: React.FC<Props> = ({ src, motion, durationInFrames }) => 
           objectFit: 'cover',
           transform: transformFor(motion, progress),
           transformOrigin: 'center center',
+          // Ortak derecelendirme. Farklı kaynaklardan gelen görseller (stok
+          // fotoğraf, AI, arşiv) tek bir kanal kimliğine oturuyor; ayrıca
+          // koyulaştırma beyaz altyazıyı her zeminde okunur kılıyor.
+          filter: 'saturate(0.5) contrast(1.12) brightness(0.62)',
         }}
       />
+      {/* Soğuk lacivert yıkama: parlak gündüz fotoğraflarını gece tonuna çeker. */}
+      <AbsoluteFill style={{ backgroundColor: 'rgba(9,13,26,0.34)' }} />
     </AbsoluteFill>
   );
 };
