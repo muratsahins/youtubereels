@@ -81,10 +81,14 @@ export function isMain(importMetaUrl: string): boolean {
   return importMetaUrl === pathToFileURL(entry).href;
 }
 
-/** Bir hatayı yakalayıp süreci düzgün sonlandıran CLI sarmalayıcısı. */
+/**
+ * Bir hatayı yakalayıp süreci düzgün sonlandıran CLI sarmalayıcısı.
+ * process.exit() yerine exitCode kullanıyoruz: Windows'ta açık bir fetch varken
+ * exit() çağırmak libuv assertion gürültüsü basıyor.
+ */
 export function runCli(fn: () => Promise<void>): void {
   fn().catch((error: unknown) => {
     console.error('\n✖ ' + (error instanceof Error ? error.message : String(error)));
-    process.exit(1);
+    process.exitCode = 1;
   });
 }
