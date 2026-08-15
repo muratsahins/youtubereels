@@ -53,6 +53,15 @@ Add one or two material details that only the luxury version has: polished teak,
 paint, chrome, lacquered joinery, spotless painted floors. These separate it far more reliably
 than adjectives like "luxury" or "expensive" do.
 
+IMAGE PROMPT RULES (branded surfaces)
+Image models ignore "no text" and "no logos" instructions on the one surface of a product that
+normally carries branding — a watch dial, a phone screen, a car grille, a sneaker side panel.
+They fill it with a garbled near-miss of a real wordmark, which looks cheap and sits exactly
+where a trademark would.
+Compose the branding out instead of asking for it to be absent: angle the surface away from
+camera, put it in shadow, crop to a different part of the object, or shoot the back. A watch
+reads as expensive from its bezel, bracelet and case profile; the dial is not required.
+
 STOCK QUERY
 stockQuery is a fallback search term for stock photo libraries, used when images are sourced
 from stock instead of generated. Give 2-4 concrete nouns, no adjectives, no camera language:
