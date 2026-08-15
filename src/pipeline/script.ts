@@ -40,6 +40,19 @@ IMAGE PROMPT RULES (copyright and safety — non-negotiable)
 - Describe generic objects with cinematic specificity: lighting, lens, material, texture, mood.
 - Every prompt is vertical 9:16 framing.
 
+IMAGE PROMPT RULES (subject accuracy)
+Name the exact subject in EVERY prompt, including close-ups and interiors — not just the
+establishing shots. An interior or detail shot that omits it drifts to whatever is most common
+in that category, which is rarely the luxury subject you mean.
+- Write "superyacht engine room", not "engine room of a large vessel".
+- Write "superyacht refit yard", not "vessel in a dry dock".
+Avoid generic scale and industry words — "vessel", "large ship", "industrial", "enormous",
+"facility" — unless the subject really is industrial. They pull the image toward commercial
+equivalents: cargo ships, factories, warehouses.
+Add one or two material details that only the luxury version has: polished teak, glossy white
+paint, chrome, lacquered joinery, spotless painted floors. These separate it far more reliably
+than adjectives like "luxury" or "expensive" do.
+
 STOCK QUERY
 stockQuery is a fallback search term for stock photo libraries, used when images are sourced
 from stock instead of generated. Give 2-4 concrete nouns, no adjectives, no camera language:
