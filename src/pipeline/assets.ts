@@ -103,6 +103,8 @@ type Prediction = {
   urls?: { get?: string };
 };
 
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 async function replicateImage(prompt: string): Promise<Buffer> {
   const token = requireEnv('REPLICATE_API_TOKEN');
   const headers = {
@@ -110,22 +112,34 @@ async function replicateImage(prompt: string): Promise<Buffer> {
     'Content-Type': 'application/json',
   };
 
-  const response = await fetch(
-    `https://api.replicate.com/v1/models/${REPLICATE_MODEL}/predictions`,
-    {
+  const body = JSON.stringify({
+    input: {
+      prompt: `${prompt}. ${STYLE_SUFFIX}`,
+      aspect_ratio: '9:16',
+      output_format: 'png',
+      num_outputs: 1,
+    },
+  });
+
+  // Replicate hesap durumuna göre dakikada birkaç isteğe kadar kısıtlayabiliyor.
+  // Bir 429 tüm partiyi düşürmemeli; bekleyip tekrar deniyoruz.
+  let response: Response | undefined;
+  for (let attempt = 1; attempt <= 5; attempt++) {
+    response = await fetch(`https://api.replicate.com/v1/models/${REPLICATE_MODEL}/predictions`, {
       method: 'POST',
       headers: { ...headers, Prefer: 'wait' },
-      body: JSON.stringify({
-        input: {
-          prompt: `${prompt}. ${STYLE_SUFFIX}`,
-          aspect_ratio: '9:16',
-          output_format: 'png',
-          num_outputs: 1,
-        },
-      }),
-    },
-  );
+      body,
+    });
 
+    if (response.status !== 429) break;
+
+    const retryAfter = Number(response.headers.get('retry-after'));
+    const waitMs = Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : attempt * 12000;
+    console.log(`[assets]   hız sınırı, ${Math.round(waitMs / 1000)} sn bekleniyor…`);
+    await sleep(waitMs);
+  }
+
+  if (!response) throw new Error('Replicate isteği kurulamadı.');
   if (!response.ok) {
     throw new Error(`Replicate ${response.status}: ${await response.text()}`);
   }
