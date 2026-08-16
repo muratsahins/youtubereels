@@ -39,6 +39,20 @@ function toChunks(words: CaptionWord[]): Chunk[] {
   }
 
   flush();
+
+  // Cümlenin son kelimesi öbek sınırına denk gelince tek kelimelik yetim öbek
+  // kalıyor ("logo."). Ekranda tek bir kelime, üstelik aktif olduğu için tamamen
+  // vurgu renginde — bozuk görünüyor. Geriye doğru birleştiriyoruz.
+  for (let index = chunks.length - 1; index > 0; index--) {
+    const chunk = chunks[index]!;
+    const previous = chunks[index - 1]!;
+    if (chunk.words.length > 1 || previous.words.length >= MAX_WORDS + 2) continue;
+
+    previous.words = [...previous.words, ...chunk.words];
+    previous.end = chunk.end;
+    chunks.splice(index, 1);
+  }
+
   return chunks;
 }
 
