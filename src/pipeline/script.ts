@@ -62,6 +62,11 @@ Compose the branding out instead of asking for it to be absent: angle the surfac
 camera, put it in shadow, crop to a different part of the object, or shoot the back. A watch
 reads as expensive from its bezel, bracelet and case profile; the dial is not required.
 
+Shadow is not enough on its own — a dim room still gets a legible wordmark painted into it.
+The branded zone has to be outside the frame or facing away. On a garment that means the
+collar, the chest and the cuff interior: shoot the shoulder with the collar cropped out, the
+back panel, or a folded cuff. Never write "no label" and leave the collar in shot.
+
 IMAGE PROMPT RULES (readable subject, dark frame)
 Every prompt needs a subject a viewer can name in one glance. A macro of a smooth painted
 panel or a plain wall is not a subject — it returns an abstract blur that communicates nothing
