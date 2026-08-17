@@ -1,0 +1,74 @@
+{
+  "title": "Billions in art sit in a warehouse nobody visits",
+  "description": "Freeports are storage buildings beside airports where art is legally in transit and therefore untaxed. Works enter, change owners, and leave decades later without ever being unwrapped.",
+  "tags": [
+    "art market",
+    "freeport",
+    "wealth",
+    "money",
+    "economics",
+    "taxes",
+    "art investing",
+    "storage",
+    "luxury assets",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "Billions of dollars of art sit in a warehouse that nobody visits.",
+      "imagePrompt": "Rows of tall wooden shipping crates stacked in a dim windowless warehouse, deep one-point perspective down the aisle, a single overhead lamp, plain unmarked timber, no people",
+      "stockQuery": "warehouse wooden crates",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "They are called freeports. Most of them sit beside an airport.",
+      "imagePrompt": "Exterior of a plain grey windowless warehouse at dusk beside an empty perimeter fence, faint runway lights far behind it, overcast sky, no signage, no people",
+      "stockQuery": "windowless warehouse dusk",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "One in Switzerland is believed to hold more than a million works.",
+      "imagePrompt": "Narrow aisle between towering steel storage racks holding flat wrapped packages, cold even light fading into darkness at the far end, plain grey wrapping, no people",
+      "stockQuery": "storage racks aisle",
+      "motion": "zoom-out",
+      "bigNumber": { "value": "1M+", "label": "works stored" }
+    },
+    {
+      "narration": "The contents of that single building have been estimated at a hundred billion dollars.",
+      "imagePrompt": "A single large painting crate standing upright under one work lamp in a dark concrete room, plain unmarked timber, deep shadow filling the space around it",
+      "stockQuery": "shipping crate lamp",
+      "motion": "pan-left",
+      "bigNumber": { "value": "$100B", "label": "estimated contents" }
+    },
+    {
+      "narration": "While the art is inside, it counts as in transit. No import duty, no sales tax.",
+      "imagePrompt": "Heavy steel security door with a small keypad in a dim concrete corridor, cold light raking from one side, deep shadow, no signage, no markings",
+      "stockQuery": "steel security door",
+      "motion": "zoom-in",
+      "bigNumber": { "value": "0%", "label": "tax while stored" }
+    },
+    {
+      "narration": "A painting can change owners repeatedly without ever leaving the room.",
+      "imagePrompt": "Two gloved hands lifting the corner of grey protective wrapping from a framed canvas, only the plain gilt frame edge visible, warm task lamp, dark room, no faces",
+      "stockQuery": "wrapped painting frame",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "It is not hung, not lit, and most of it is never unwrapped.",
+      "imagePrompt": "A framed canvas turned to face the wall in a dim storage room, only its wooden stretcher bars and bare canvas back visible, single raking light, deep shadow",
+      "stockQuery": "canvas back stretcher",
+      "motion": "zoom-out",
+      "bigNumber": { "value": "0", "label": "days on display" }
+    },
+    {
+      "narration": "The value was never in looking at it. It was in where it sits.",
+      "imagePrompt": "Wide view down an unlit warehouse aisle full of wrapped artworks receding into total blackness, one distant lamp at the far end, no people",
+      "stockQuery": "dark warehouse aisle",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

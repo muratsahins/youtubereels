@@ -2,9 +2,17 @@ node_modules/
 .env
 .env.local
 
-# Üretilen içerik: her video kendi klasöründe, repoya girmez
-public/content/*
-!public/content/.gitkeep
+# Üretilen medya repoya girmez (yeniden üretilebilir, büyük).
+# script.json istisna: elle yazılan asıl içerik o, kaybolmamalı.
+public/content/**/assets/
+public/content/**/assets-*/
+public/content/**/*.mp3
+public/content/**/*.png
+public/content/**/*.jpg
+public/content/**/captions.json
+public/content/**/assets.json
+public/content/**/props.json
+public/content/**/prompts.txt
 
 # Müzik dosyaları (lisanslı, repoya koyma)
 public/music/*

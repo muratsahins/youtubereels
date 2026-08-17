@@ -1,0 +1,86 @@
+{
+  "title": "You can't buy this $9,000 watch",
+  "description": "A steel sports watch with a list price anyone could pay, that almost nobody can actually buy. The waiting list is not a symptom of the demand. It is the business model.",
+  "tags": [
+    "watches",
+    "luxury",
+    "economics",
+    "scarcity",
+    "money",
+    "wealth",
+    "investing",
+    "swiss watches",
+    "resale value",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "This watch costs nine thousand dollars. You cannot buy it.",
+      "imagePrompt": "Extreme macro of a stainless steel luxury dive watch lying on black velvet, shot from a steep low angle along the bracelet so the dial face is turned away from camera and lost in deep shadow, single hard light raking across the polished bezel edge and brushed steel links",
+      "stockQuery": "luxury watch macro",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "$9,000",
+        "label": "list price"
+      }
+    },
+    {
+      "narration": "Walk into the boutique with the cash in your hand, and they will put you on a list instead.",
+      "imagePrompt": "Interior of an empty high-end watch boutique at night, illuminated glass display cases, polished dark wood cabinetry and brass fittings, marble floor, no people",
+      "stockQuery": "watch boutique interior",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "That list can run five years. For some models, nobody will even quote you a date.",
+      "imagePrompt": "A single empty velvet watch cushion inside a lit glass display case, the watch missing, polished wood and brass frame, cold spotlight, deep surrounding shadow",
+      "stockQuery": "watch display case",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "5 YEARS",
+        "label": "typical wait"
+      }
+    },
+    {
+      "narration": "The identical watch, from a private seller this afternoon, costs three times retail.",
+      "imagePrompt": "Two identical steel luxury watch bracelets and case profiles laid side by side on dark polished stone, photographed from directly above the folding clasps so no dial is visible, one lit warm and one lit cold, macro detail of the links, dramatic contrast",
+      "stockQuery": "two luxury watches",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "3x",
+        "label": "on the resale market"
+      }
+    },
+    {
+      "narration": "The maker could build more of them tomorrow. It chooses not to.",
+      "imagePrompt": "Watchmaker's bench in a Swiss atelier, tiny brass movement components laid out on a soft grey cloth, precision tweezers and loupe, warm focused lamp light, hands out of frame",
+      "stockQuery": "watchmaker bench",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "Output holds near one million pieces a year, across every model in the catalogue.",
+      "imagePrompt": "Rows of finished luxury watch movements in a clean assembly room, gleaming brass and steel gears repeating into the distance, bright even light, shallow focus, no people",
+      "stockQuery": "watch movement gears",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "1M",
+        "label": "made per year"
+      }
+    },
+    {
+      "narration": "The shortage is not a symptom of the demand. The shortage is the product.",
+      "imagePrompt": "A single stainless steel luxury watch standing upright on its bracelet inside a large empty glass vitrine, seen edge-on in strict profile with the dial facing away from camera, hard spotlight from above, vast dark empty space around it, minimal composition",
+      "stockQuery": "watch glass vitrine",
+      "motion": "zoom-out",
+      "bigNumber": null
+    },
+    {
+      "narration": "So the nine thousand on the tag was never really the price.",
+      "imagePrompt": "Extreme macro of the mirror-polished case back and bracelet links of a steel luxury watch, dark room reflected in the metal, subtle film grain, low key lighting",
+      "stockQuery": "watch case back macro",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

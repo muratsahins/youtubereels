@@ -1,0 +1,86 @@
+{
+  "title": "Almost nobody who flies private owns the plane",
+  "description": "Owning a jet only pays off above a flight-hour threshold that almost no private flyer reaches. So the people stepping onto the airstair are not buying an aircraft. They are buying hours.",
+  "tags": [
+    "private jet",
+    "luxury",
+    "economics",
+    "money",
+    "wealth",
+    "aviation",
+    "cost breakdown",
+    "fractional ownership",
+    "rich lifestyle",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "Almost nobody who flies private actually owns the plane.",
+      "imagePrompt": "A private jet silhouetted on a dark wet runway apron at night, airstair lowered, runway lights streaking behind it, plain unmarked white fuselage, no people",
+      "stockQuery": "private jet night",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "A large jet costs sixty million dollars to buy, before it has flown a single mile.",
+      "imagePrompt": "Low three-quarter view of the nose and dark cockpit windows of a private jet inside a dim hangar, polished white paint falling away into deep shadow, single hard light raking from the side, plain unmarked fuselage, no people",
+      "stockQuery": "private jet nose hangar",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "$60M",
+        "label": "to buy the aircraft"
+      }
+    },
+    {
+      "narration": "Owning one only makes financial sense above about two hundred flight hours a year.",
+      "imagePrompt": "A single private jet parked alone inside a vast dark hangar, one work lamp glowing on the concrete floor, deep shadow filling the space, plain unmarked fuselage, no people",
+      "stockQuery": "jet hangar dark",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "200 HRS",
+        "label": "break-even point"
+      }
+    },
+    {
+      "narration": "The typical private flyer uses about fifty hours a year.",
+      "imagePrompt": "Empty private jet cabin interior, cream leather club seats facing each other across polished wood tables, small oval windows, warm low lighting, no people",
+      "stockQuery": "private jet cabin",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "50 HRS",
+        "label": "actually flown"
+      }
+    },
+    {
+      "narration": "So they buy hours instead: a fractional share, or a card of prepaid flight time.",
+      "imagePrompt": "Row of oval private jet windows seen from outside at dusk, warm cabin glow spilling out of each one, polished white fuselage, plain unmarked paint, shallow focus",
+      "stockQuery": "aircraft windows dusk",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "Chartering that same aircraft runs around ten thousand dollars an hour, all in.",
+      "imagePrompt": "Macro of a private jet engine nacelle and fan blades half in shadow, brushed metal and smooth cowling, single hard light source, plain unmarked casing",
+      "stockQuery": "jet engine nacelle",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "$10K",
+        "label": "per hour, chartered"
+      }
+    },
+    {
+      "narration": "Fifty hours of that is half a million a year, against sixty million and a full-time crew.",
+      "imagePrompt": "Aerial view of a single private jet parked on a remote runway at dawn, long shadow stretching across empty tarmac, flat empty landscape all around, no people",
+      "stockQuery": "private jet runway",
+      "motion": "zoom-out",
+      "bigNumber": null
+    },
+    {
+      "narration": "So the jet sitting on the tarmac is almost never theirs. The access is.",
+      "imagePrompt": "A private jet taxiing away down a dark runway seen from behind, tail silhouette against distant city lights, wet reflective asphalt, plain unmarked surfaces, no people",
+      "stockQuery": "jet taxiing runway",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

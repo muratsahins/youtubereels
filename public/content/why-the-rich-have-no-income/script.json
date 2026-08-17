@@ -1,0 +1,74 @@
+{
+  "title": "The richest people have almost no income",
+  "description": "A dollar-a-year salary is not modesty and not a stunt. It is the visible end of a mechanism that turns a fortune into spendable cash without ever selling anything, and without ever creating a taxable event.",
+  "tags": [
+    "wealth",
+    "money",
+    "economics",
+    "finance",
+    "taxes",
+    "billionaires",
+    "investing",
+    "capital gains",
+    "how the rich work",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "The richest people you know report almost no income at all.",
+      "imagePrompt": "Empty corner office at night high in a glass tower, floor-to-ceiling windows, city lights far below, a single leather chair turned away toward the view, no people, no screens",
+      "stockQuery": "empty executive office",
+      "motion": "zoom-in",
+      "bigNumber": { "value": "$1", "label": "annual salary" }
+    },
+    {
+      "narration": "Selling their shares would trigger a tax bill above twenty percent, so they never sell.",
+      "imagePrompt": "Grand marble lobby of a private bank at night, tall stone columns, polished floor reflecting one chandelier, brass detailing, completely deserted, no signage",
+      "stockQuery": "bank marble lobby",
+      "motion": "pan-right",
+      "bigNumber": { "value": "20%+", "label": "capital gains tax" }
+    },
+    {
+      "narration": "Instead a bank lends against the stock, at a rate close to what entire governments pay.",
+      "imagePrompt": "Massive polished steel vault door standing slightly open in a dim stone room, heavy locking bolts and wheel, dramatic raking side light, no markings",
+      "stockQuery": "vault door",
+      "motion": "zoom-out",
+      "bigNumber": { "value": "~5%", "label": "cost of the loan" }
+    },
+    {
+      "narration": "The loan is not income. Loans are not taxed anywhere.",
+      "imagePrompt": "Macro of a heavy black fountain pen lying on dark polished wood beside a folded blank sheet of cream paper, warm lamp light from one side, shallow focus, no writing",
+      "stockQuery": "fountain pen desk",
+      "motion": "pan-left",
+      "bigNumber": null
+    },
+    {
+      "narration": "They live on borrowed money and never touch the asset underneath it.",
+      "imagePrompt": "Empty penthouse living room at night, low modern furniture, floor-to-ceiling windows overlooking a lit city skyline, one lamp glowing, no people",
+      "stockQuery": "penthouse night city",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "The shares keep compounding the whole time, the debt sitting quietly behind them.",
+      "imagePrompt": "Macro of polished brass balance-scale weights stacked on dark stone, cold directional light, deep shadow, minimal abstract composition",
+      "stockQuery": "brass weights scale",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "In America, at death the cost basis resets, and the gain nobody ever taxed disappears.",
+      "imagePrompt": "An empty antique leather armchair in a dark wood-panelled library, one green glass banker's lamp lit on a side table, leather-bound books receding into deep shadow, no people",
+      "stockQuery": "dark library armchair",
+      "motion": "zoom-out",
+      "bigNumber": { "value": "$0", "label": "tax on the gain" }
+    },
+    {
+      "narration": "So the number on the paycheck was never really the point.",
+      "imagePrompt": "The same empty corner office at dawn, cold blue light through floor-to-ceiling glass, one leather chair, quiet city far below, no people, no screens",
+      "stockQuery": "office window dawn",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

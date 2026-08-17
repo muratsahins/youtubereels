@@ -1,0 +1,74 @@
+{
+  "title": "It takes 40 people to make one life look effortless",
+  "description": "The staff of a large estate are a payroll, an org chart and a set of shifts. Their entire job is to leave no trace of themselves in the rooms the owner actually uses.",
+  "tags": [
+    "wealth",
+    "luxury",
+    "economics",
+    "money",
+    "estate staff",
+    "household",
+    "rich lifestyle",
+    "cost breakdown",
+    "how the rich live",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "It takes about forty people to make one life look effortless.",
+      "imagePrompt": "A vast empty formal entrance hall of a country estate at dawn, marble floor polished to a mirror, one shaft of cold light falling from a tall window, deep shadow in the corners, no people",
+      "stockQuery": "estate entrance hall",
+      "motion": "zoom-in",
+      "bigNumber": { "value": "40", "label": "on the payroll" }
+    },
+    {
+      "narration": "None of them are visible when you walk in. That is the job.",
+      "imagePrompt": "Narrow service corridor behind an estate kitchen, plain painted walls, a row of brass hooks, worn stone floor, warm low light fading into darkness, no people",
+      "stockQuery": "service corridor house",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "An estate manager runs the household the way a small company is run.",
+      "imagePrompt": "An estate office at night, a large leather-topped desk with a single brass lamp lit, a wall of small brass key hooks receding into shadow, no people",
+      "stockQuery": "estate office desk",
+      "motion": "zoom-out",
+      "bigNumber": { "value": "$200K", "label": "estate manager" }
+    },
+    {
+      "narration": "Below them, a chef, drivers, security, and a team of six who only handle the grounds.",
+      "imagePrompt": "Rows of pressed white uniforms hanging in a dim staff cloakroom, plain garments on wooden hangers, one overhead bulb, deep shadow, no labels, no people",
+      "stockQuery": "uniforms hanging cloakroom",
+      "motion": "pan-left",
+      "bigNumber": { "value": "6", "label": "just for the grounds" }
+    },
+    {
+      "narration": "Payroll on a large estate runs three million a year, before anyone buys anything.",
+      "imagePrompt": "Professional estate kitchen at night, long steel counters gleaming, copper pans hanging on an overhead rack, spotless and completely empty, one lamp lit, no people",
+      "stockQuery": "professional kitchen night",
+      "motion": "zoom-in",
+      "bigNumber": { "value": "$3M", "label": "annual payroll" }
+    },
+    {
+      "narration": "Most of the work happens in rooms the owner never walks into.",
+      "imagePrompt": "A dim laundry room in a large house, tall steel shelving stacked with folded white linen, one overhead lamp throwing long shadows, no people",
+      "stockQuery": "laundry room linen",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "You are not paying for the house. You are paying for it to ask nothing of you.",
+      "imagePrompt": "A formal dining room at night set for a single person, long polished table stretching away, one place setting lit by candlelight, tall dark windows behind, no people",
+      "stockQuery": "dining table set",
+      "motion": "zoom-out",
+      "bigNumber": null
+    },
+    {
+      "narration": "So the effortlessness was never a feature of the house. It was forty salaries.",
+      "imagePrompt": "The same vast entrance hall at night, completely empty, a single lamp burning, marble floor holding its reflection, deep shadow filling the frame, no people",
+      "stockQuery": "dark entrance hall",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

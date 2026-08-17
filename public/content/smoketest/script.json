@@ -1,0 +1,31 @@
+{
+  "title": "The real annual cost of a private jet",
+  "description": "The purchase price is the cheapest part of owning a private jet.",
+  "tags": ["luxury", "aviation", "money", "economics"],
+  "scenes": [
+    {
+      "narration": "He paid sixty million for the jet. The real bill starts here.",
+      "imagePrompt": "A sleek unmarked private jet on a dark rain-slicked tarmac at night, runway lights streaking",
+      "motion": "zoom-in",
+      "bigNumber": { "value": "$60M", "label": "purchase price" }
+    },
+    {
+      "narration": "Two full-time pilots. They never fly for anyone else.",
+      "imagePrompt": "Empty cockpit at dusk, instrument glow, no people, shallow depth of field",
+      "motion": "pan-left",
+      "bigNumber": { "value": "$500K", "label": "crew per year" }
+    },
+    {
+      "narration": "Fuel burns roughly a thousand dollars every hour in the air.",
+      "imagePrompt": "Close macro of a fuel nozzle against polished aircraft skin, cold blue light",
+      "motion": "zoom-out",
+      "bigNumber": { "value": "$1,000", "label": "per flight hour" }
+    },
+    {
+      "narration": "So the sixty million was never the expensive part.",
+      "imagePrompt": "Wide vertical shot of a hangar interior, single aircraft silhouette, dramatic shadows",
+      "motion": "pan-right",
+      "bigNumber": null
+    }
+  ]
+}

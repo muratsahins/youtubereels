@@ -1,0 +1,86 @@
+{
+  "title": "The cheapest thing on that coat is the logo",
+  "description": "Logo-free luxury costs more than branded luxury, and not because it is better made. The label is not what you were paying for. The label was holding the price down.",
+  "tags": [
+    "quiet luxury",
+    "stealth wealth",
+    "fashion economics",
+    "money",
+    "wealth",
+    "cashmere",
+    "branding",
+    "luxury goods",
+    "how pricing works",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "Nothing here carries a logo. That is the expensive part.",
+      "imagePrompt": "A dark cashmere overcoat on a wooden hanger photographed from behind and slightly to one side, the whole back panel and shoulder line clearly visible and evenly lit by a broad soft light, plain unbroken fabric, dim wardrobe behind, no people",
+      "stockQuery": "cashmere coat hanging",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "A cashmere coat with a visible label sells for around two thousand dollars.",
+      "imagePrompt": "Macro of a folded dark wool coat sleeve and a single horn button on a black surface, one hard light from the side, shallow focus, plain fabric, no labels",
+      "stockQuery": "wool coat button macro",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "$2,000",
+        "label": "with a logo"
+      }
+    },
+    {
+      "narration": "The same cloth, unbranded, from a mill that supplies both, runs closer to six.",
+      "imagePrompt": "Macro of raw pale cashmere fibre heaped in a dim textile mill, one shaft of light catching the soft nap, dark machinery receding behind it, no people",
+      "stockQuery": "cashmere fibre mill",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "$6,000",
+        "label": "without one"
+      }
+    },
+    {
+      "narration": "You were never paying for the logo. The logo was subsidising the price.",
+      "imagePrompt": "Close detail of hand stitching running along the inside seam of a dark tailored jacket, needle and dark thread, warm low lamp light, hands out of frame, plain cloth",
+      "stockQuery": "hand stitching jacket",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "3x",
+        "label": "the price, no logo"
+      }
+    },
+    {
+      "narration": "A logo house ships millions of units a year. The quiet one ships a hundred times fewer.",
+      "imagePrompt": "Rows of identical dark coats on a long rail receding into a dim warehouse, low overhead light, deep one-point perspective, plain garments, no people",
+      "stockQuery": "coat rail warehouse",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "100x",
+        "label": "the production run"
+      }
+    },
+    {
+      "narration": "There is no volume to spread the cost across, and no advertising to inherit.",
+      "imagePrompt": "Interior of an empty quiet boutique at night, plain oak shelving holding a few folded knitwear stacks, warm low lighting, deep shadow in the corners, no signage, no people",
+      "stockQuery": "luxury boutique night",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "The label pays for itself. Its absence has to be paid for by you.",
+      "imagePrompt": "Extreme macro of the plain dark wool cuff of a coat sleeve folded back on itself, neat stitched edge, smooth unbroken fabric, single raking light, deep surrounding shadow",
+      "stockQuery": "coat collar macro",
+      "motion": "zoom-out",
+      "bigNumber": null
+    },
+    {
+      "narration": "So the cheapest thing on that coat was always the logo.",
+      "imagePrompt": "A dark cashmere overcoat on a wooden hanger seen from directly behind in a dim wardrobe, only the plain back panel and shoulder line visible, one warm shaft of light falling across it, deep shadow, no people",
+      "stockQuery": "coat wardrobe dark",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

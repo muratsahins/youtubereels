@@ -1,0 +1,89 @@
+{
+  "title": "A superyacht eats 10% of its price every year",
+  "description": "The purchase price of a superyacht is the one number people quote. It is also the smallest number involved. Here is what it actually costs to keep one floating for twelve months.",
+  "tags": [
+    "superyacht",
+    "luxury",
+    "economics",
+    "money",
+    "wealth",
+    "cost breakdown",
+    "yachting",
+    "rich lifestyle",
+    "asset costs",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "Every year, a superyacht eats ten percent of its own price.",
+      "imagePrompt": "Aerial drone view of a single sleek 80-meter white superyacht cruising alone across dark open water at dusk, modern motor yacht with curved glass superstructure and sun deck, long white wake behind it, moody overcast sky",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "10%",
+        "label": "of price, per year"
+      },
+      "stockQuery": "luxury yacht sea"
+    },
+    {
+      "narration": "You pay a hundred and fifty million for the boat. Then fifteen million more, every year.",
+      "imagePrompt": "Close macro of the polished teak deck of a luxury motor yacht meeting a gleaming stainless steel yacht railing, edge of a white sun lounger just in frame, calm sea beyond, golden hour light raking across the wood grain, shallow focus",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "$15M",
+        "label": "annual running cost"
+      },
+      "stockQuery": "yacht deck teak"
+    },
+    {
+      "narration": "Around forty crew live on board. Their salaries alone run four million a year.",
+      "imagePrompt": "Narrow crew corridor inside a superyacht, glossy white painted joinery with pale wood trim, row of identical closed cabin doors with polished chrome handles, low ceiling, warm recessed downlights, deep one-point perspective, no people",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "40",
+        "label": "full-time crew"
+      },
+      "stockQuery": "luxury yacht interior"
+    },
+    {
+      "narration": "At cruising speed she burns five hundred liters of fuel every hour.",
+      "imagePrompt": "Immaculate superyacht engine room, two large marine engines in gleaming white and polished chrome, spotless painted floor, neat color-coded pipework and gauges, bright clean lighting, luxury yacht engineering space, no people",
+      "motion": "zoom-in",
+      "bigNumber": null,
+      "stockQuery": "ship engine room"
+    },
+    {
+      "narration": "A berth on the Mediterranean coast can cost ten thousand dollars a night in peak season.",
+      "imagePrompt": "Empty superyacht berth at a luxury Mediterranean marina at night, thick mooring lines and polished cleats on a clean wooden dock in the foreground, sleek white yacht hulls glowing under dock lights behind, calm black water, warm harbor bokeh",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "$10K",
+        "label": "per night, peak berth"
+      },
+      "stockQuery": "marina night"
+    },
+    {
+      "narration": "Insurance takes about one percent of the hull value before she has left the dock.",
+      "imagePrompt": "Detail of the glossy white hull of a luxury motor yacht curving into dark calm water, crisp painted waterline stripe and mirror reflection, cold blue tones, minimal abstract composition",
+      "motion": "pan-right",
+      "bigNumber": null,
+      "stockQuery": "yacht bow water"
+    },
+    {
+      "narration": "Every five years she goes into a shipyard, and a full refit can reach twenty million.",
+      "imagePrompt": "A large white superyacht hauled out of the water in a yacht refit yard, hull supported on padded steel cradles, fresh paint being polished on the topsides, light scaffolding along the side, work lamps glowing at night, no people",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "$20M",
+        "label": "five-year refit"
+      },
+      "stockQuery": "shipyard dry dock"
+    },
+    {
+      "narration": "So the hardest part of owning her was never writing that first check.",
+      "imagePrompt": "A single white superyacht anchored alone in a dark bay at night, one warm lit salon window glowing, faint coastline lights far in the distance, vast calm black sea, wide vertical framing",
+      "motion": "zoom-in",
+      "bigNumber": null,
+      "stockQuery": "yacht anchored bay"
+    }
+  ]
+}
