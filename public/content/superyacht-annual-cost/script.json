@@ -53,7 +53,7 @@
     },
     {
       "narration": "A berth on the Mediterranean coast can cost ten thousand dollars a night in peak season.",
-      "imagePrompt": "Empty superyacht berth at a luxury Mediterranean marina at night, thick mooring lines and polished cleats on a clean wooden dock in the foreground, sleek white yacht hulls glowing under dock lights behind, calm black water, warm harbor bokeh",
+      "imagePrompt": "Night detail of an empty luxury marina berth, thick mooring lines and polished steel cleats filling the foreground on wet wooden dock boards, blurred white hull sides and harbour lights far behind and out of focus, no transom, no signage, no people",
       "motion": "zoom-out",
       "bigNumber": {
         "value": "$10K",
@@ -70,7 +70,7 @@
     },
     {
       "narration": "Every five years she goes into a shipyard, and a full refit can reach twenty million.",
-      "imagePrompt": "A large white superyacht hauled out of the water in a yacht refit yard, hull supported on padded steel cradles, fresh paint being polished on the topsides, light scaffolding along the side, work lamps glowing at night, no people",
+      "imagePrompt": "A white superyacht hauled out in a refit yard photographed head-on from directly in front of the bow at night, the bow stem rising above padded steel cradles, work lamps glowing behind, hull sides receding out of frame, no signage, no people",
       "motion": "zoom-out",
       "bigNumber": {
         "value": "$20M",

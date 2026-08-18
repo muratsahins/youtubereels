@@ -16,24 +16,33 @@
   "scenes": [
     {
       "narration": "The richest people you know report almost no income at all.",
-      "imagePrompt": "Empty corner office at night high in a glass tower, floor-to-ceiling windows, city lights far below, a single leather chair turned away toward the view, no people, no screens",
+      "imagePrompt": "Empty corner office at night high in a glass tower, one leather chair turned toward floor-to-ceiling windows, city far below reduced to a soft carpet of distant unfocused light points, no buildings close enough to show signage, no people",
       "stockQuery": "empty executive office",
       "motion": "zoom-in",
-      "bigNumber": { "value": "$1", "label": "annual salary" }
+      "bigNumber": {
+        "value": "$1",
+        "label": "annual salary"
+      }
     },
     {
       "narration": "Selling their shares would trigger a tax bill above twenty percent, so they never sell.",
       "imagePrompt": "Grand marble lobby of a private bank at night, tall stone columns, polished floor reflecting one chandelier, brass detailing, completely deserted, no signage",
       "stockQuery": "bank marble lobby",
       "motion": "pan-right",
-      "bigNumber": { "value": "20%+", "label": "capital gains tax" }
+      "bigNumber": {
+        "value": "20%+",
+        "label": "capital gains tax"
+      }
     },
     {
       "narration": "Instead a bank lends against the stock, at a rate close to what entire governments pay.",
       "imagePrompt": "Massive polished steel vault door standing slightly open in a dim stone room, heavy locking bolts and wheel, dramatic raking side light, no markings",
       "stockQuery": "vault door",
       "motion": "zoom-out",
-      "bigNumber": { "value": "~5%", "label": "cost of the loan" }
+      "bigNumber": {
+        "value": "~5%",
+        "label": "cost of the loan"
+      }
     },
     {
       "narration": "The loan is not income. Loans are not taxed anywhere.",
@@ -61,7 +70,10 @@
       "imagePrompt": "An empty antique leather armchair in a dark wood-panelled library, one green glass banker's lamp lit on a side table, leather-bound books receding into deep shadow, no people",
       "stockQuery": "dark library armchair",
       "motion": "zoom-out",
-      "bigNumber": { "value": "$0", "label": "tax on the gain" }
+      "bigNumber": {
+        "value": "$0",
+        "label": "tax on the gain"
+      }
     },
     {
       "narration": "So the number on the paycheck was never really the point.",

@@ -16,7 +16,7 @@
   "scenes": [
     {
       "narration": "This watch costs nine thousand dollars. You cannot buy it.",
-      "imagePrompt": "Extreme macro of a stainless steel luxury dive watch lying on black velvet, shot from a steep low angle along the bracelet so the dial face is turned away from camera and lost in deep shadow, single hard light raking across the polished bezel edge and brushed steel links",
+      "imagePrompt": "Extreme macro of the brushed steel bracelet links and side case profile of a luxury watch lying on black velvet, camera at bracelet level so the dial is entirely outside the frame, single hard light raking across the polished link edges, deep black shadow",
       "stockQuery": "luxury watch macro",
       "motion": "zoom-in",
       "bigNumber": {
