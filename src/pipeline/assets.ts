@@ -15,9 +15,20 @@ import {
 } from '../util/paths';
 
 /** Tüm sahnelere uygulanan ortak görsel imza — kanalın tutarlı bir görünüşü olsun diye. */
-export const STYLE_SUFFIX =
-  'cinematic still, dramatic low-key lighting, shallow depth of field, subtle film grain, ' +
-  'rich contrast, vertical 9:16 composition, no text, no logos, no watermarks, no visible faces';
+/** Aydınlatma dışında her videoda aynı kalan görsel imza. */
+const STYLE_BASE =
+  'shallow depth of field, subtle film grain, rich contrast, vertical 9:16 composition, ' +
+  'no text, no logos, no watermarks, no visible faces';
+
+/**
+ * Kanalın varsayılanı gündüz (2026-08-25 itibarıyla). Rakam kartı krem/altın ve üst
+ * üçte birde durduğu için gündüz karelerde üst bölümün gölgede kalması şart -
+ * bu kural script.ts sistem promptunda görsel promptlara dayatılıyor.
+ * Gece varyantı hâlâ duruyor: npm run assets -- --slug X --night
+ */
+export const STYLE_SUFFIX = 'cinematic still, dramatic low-key lighting, ' + STYLE_BASE;
+export const DAYLIGHT_STYLE_SUFFIX =
+  'cinematic still, bright natural daylight, soft directional sunlight, clear sky, ' + STYLE_BASE;
 
 const PALETTES: [string, string][] = [
   ['#0b0b0f', '#3a2c1a'],
@@ -105,21 +116,35 @@ type Prediction = {
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-async function replicateAttempt(prompt: string): Promise<Buffer> {
+async function replicateAttempt(prompt: string, daylight: boolean): Promise<Buffer> {
   const token = requireEnv('REPLICATE_API_TOKEN');
   const headers = {
     Authorization: `Bearer ${token}`,
     'Content-Type': 'application/json',
   };
 
-  const body = JSON.stringify({
-    input: {
-      prompt: `${prompt}. ${STYLE_SUFFIX}`,
-      aspect_ratio: '9:16',
-      output_format: 'png',
-      num_outputs: 1,
-    },
-  });
+  const suffix = daylight ? DAYLIGHT_STYLE_SUFFIX : STYLE_SUFFIX;
+
+  // flux-1.1-pro num_outputs kabul etmiyor ve 9:16'da 768x1344 üretiyor; custom
+  // ölçüyle 832x1440'a çıkıyoruz (kare 1080x1920 render ediliyor, upscale azalsın).
+  const isPro = REPLICATE_MODEL.includes('-pro');
+  const input = isPro
+    ? {
+        prompt: `${prompt}. ${suffix}`,
+        aspect_ratio: 'custom' as const,
+        width: 832,
+        height: 1440,
+        output_format: 'png' as const,
+        safety_tolerance: 2,
+      }
+    : {
+        prompt: `${prompt}. ${suffix}`,
+        aspect_ratio: '9:16' as const,
+        output_format: 'png' as const,
+        num_outputs: 1,
+      };
+
+  const body = JSON.stringify({ input });
 
   // Replicate hesap durumuna göre dakikada birkaç isteğe kadar kısıtlayabiliyor.
   // Bir 429 tüm partiyi düşürmemeli; bekleyip tekrar deniyoruz.
@@ -171,12 +196,12 @@ async function replicateAttempt(prompt: string): Promise<Buffer> {
  * Bunlar geçici; aynı istek birkaç saniye sonra sorunsuz çalışıyor. Tek bir
  * hıçkırık 8 görsellik partiyi düşürmesin diye sahne bazında tekrar deniyoruz.
  */
-async function replicateImage(prompt: string): Promise<Buffer> {
+async function replicateImage(prompt: string, daylight: boolean): Promise<Buffer> {
   let lastError: unknown;
 
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
-      return await replicateAttempt(prompt);
+      return await replicateAttempt(prompt, daylight);
     } catch (error) {
       lastError = error;
       if (attempt === 3) break;
@@ -189,7 +214,11 @@ async function replicateImage(prompt: string): Promise<Buffer> {
   throw lastError;
 }
 
-export async function generateAssets(slug: string): Promise<AssetManifest> {
+export async function generateAssets(
+  slug: string,
+  options: { daylight?: boolean } = {},
+): Promise<AssetManifest> {
+  const daylight = options.daylight ?? true;
   const dir = contentDir(slug);
   const script = readJson<VideoScript>(path.join(dir, 'script.json'));
   const outDir = assetsDir(slug);
@@ -224,8 +253,8 @@ export async function generateAssets(slug: string): Promise<AssetManifest> {
     }
 
     if (IMAGE_PROVIDER === 'replicate') {
-      console.log(`[assets] ${file} üretiliyor (flux)…`);
-      fs.writeFileSync(target, await replicateImage(scene.imagePrompt));
+      console.log(`[assets] ${file} üretiliyor (${REPLICATE_MODEL}, ${daylight ? 'gündüz' : 'gece'})…`);
+      fs.writeFileSync(target, await replicateImage(scene.imagePrompt, daylight));
     } else {
       // Eski senaryolarda stockQuery alanı olmayabilir; prompt'tan türetiyoruz.
       const stockQuery =
@@ -251,7 +280,9 @@ export async function generateAssets(slug: string): Promise<AssetManifest> {
 }
 
 async function main(): Promise<void> {
-  await generateAssets(requireArg('slug'));
+  await generateAssets(requireArg('slug'), {
+    daylight: !process.argv.includes('--night'),
+  });
 }
 
 if (isMain(import.meta.url)) runCli(main);

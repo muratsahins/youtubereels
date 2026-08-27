@@ -13,7 +13,8 @@ export const IMAGE_PROVIDER = (process.env.IMAGE_PROVIDER ?? 'placeholder') as
   | 'pexels'
   | 'manual';
 
-export const REPLICATE_MODEL = process.env.REPLICATE_MODEL ?? 'black-forest-labs/flux-schnell';
+/** Kanal kuralı: her zaman en üst kalite model. .env yoksa bile flux-1.1-pro'ya düş. */
+export const REPLICATE_MODEL = process.env.REPLICATE_MODEL ?? 'black-forest-labs/flux-1.1-pro';
 
 export const CONTENT_LANG = (process.env.CONTENT_LANG ?? 'en') as 'en' | 'tr';
 

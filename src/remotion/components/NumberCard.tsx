@@ -20,13 +20,29 @@ export const NumberCard: React.FC<Props> = ({ value, label }) => {
   const drift = interpolate(frame, [0, 120], [0, -14], { extrapolateRight: 'clamp' });
 
   return (
-    <AbsoluteFill
-      style={{
-        alignItems: 'center',
-        justifyContent: 'flex-start',
-        paddingTop: 430,
-      }}
-    >
+    <>
+      {/*
+        Rakamın arkasındaki karartma. Gündüz karelerde krem rakam ve özellikle
+        altın etiket açık bir zeminde (gökyüzü, beyaz duvar, cam) kayboluyordu;
+        textShadow tek başına yetmiyor. Kenarsız elips olduğu için zaten koyu
+        olan karelerde fark edilmiyor, parlak karelerde metni kurtarıyor.
+      */}
+      <AbsoluteFill
+        style={{
+          opacity,
+          background:
+            'radial-gradient(70% 34% at 50% 30%, rgba(0,0,0,0.5) 0%,' +
+            ' rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.12) 70%, rgba(0,0,0,0) 100%)',
+        }}
+      />
+
+      <AbsoluteFill
+        style={{
+          alignItems: 'center',
+          justifyContent: 'flex-start',
+          paddingTop: 430,
+        }}
+      >
       <div
         style={{
           opacity,
@@ -63,6 +79,7 @@ export const NumberCard: React.FC<Props> = ({ value, label }) => {
           {label}
         </div>
       </div>
-    </AbsoluteFill>
+      </AbsoluteFill>
+    </>
   );
 };

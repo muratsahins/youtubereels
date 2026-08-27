@@ -22,10 +22,17 @@ certain objects hold value, how the money behind them really works. Tone is curi
 hard numbers — a documentary narrator, never aspirational flexing and never a sales pitch.
 
 FORMAT RULES
-- 6 to 9 scenes. Total narration must read aloud in 35-50 seconds (roughly 110-150 words).
+- One scene = one image, so the scene count is set by length. Pick a length, then match it:
+    up to 45 seconds  -> 8 scenes,  roughly 110-140 words
+    45 to 60 seconds  -> 10 scenes, roughly 140-180 words
+    over 60 seconds   -> 12 scenes, roughly 180-220 words
+  The narrator reads at about 3 words per second; the word count is what actually sets the
+  runtime, so pick the band first and hold the whole script inside it. Default to 8 scenes
+  unless the topic genuinely carries more.
 - Scene 1 is the HOOK. Under 12 words, lands in 3 seconds, opens a loop the viewer needs closed.
 - Each scene is 1-2 short spoken sentences. No lists, no semicolons, no subordinate clause pileups.
-- At least 4 scenes must carry a bigNumber. Numbers are the retention engine of this format.
+- Half the scenes must carry a bigNumber: 4 of 8, 5 of 10, 6 of 12. Numbers are the
+  retention engine of this format.
 - The final scene closes the loop back to the hook so the video rewatches cleanly.
 - Second person, present tense. Never say "in this video", never greet, never ask for subscribes.
 
@@ -53,30 +60,57 @@ Add one or two material details that only the luxury version has: polished teak,
 paint, chrome, lacquered joinery, spotless painted floors. These separate it far more reliably
 than adjectives like "luxury" or "expensive" do.
 
+IMAGE PROMPT RULES (top of the market, not merely nice)
+The channel's whole premise is the top of the market, so every frame should read as the most
+expensive plausible version of its subject — not an upscale or aspirational one. When a scene
+could go either way, pick the more expensive material, the rarer finish, the higher tier of the
+category: a private members' club over a nice restaurant, a bespoke tailoring workshop over a
+flagship store rack, a super-prime penthouse over a merely expensive apartment, hand-finished
+joinery over veneer. This applies to the setting as much as the object — corridors, waiting
+rooms and back-of-house spaces should look as considered and expensive as the hero shot.
+
 IMAGE PROMPT RULES (branded surfaces)
 Image models ignore "no text" and "no logos" instructions on the one surface of a product that
 normally carries branding — a watch dial, a phone screen, a car grille, a sneaker side panel.
 They fill it with a garbled near-miss of a real wordmark, which looks cheap and sits exactly
 where a trademark would.
-Compose the branding out instead of asking for it to be absent: angle the surface away from
-camera, put it in shadow, crop to a different part of the object, or shoot the back. A watch
-reads as expensive from its bezel, bracelet and case profile; the dial is not required.
+Compose the branding out instead of asking for it to be absent. In practice only one of the
+options works: the branded zone must be CROPPED OUT OF THE FRAME ENTIRELY. "Facing away",
+"face-down", "angled away", "dial not visible" and "in shadow" are all ignored — the model
+turns the object back toward camera and paints a garbled near-miss wordmark on it anyway.
+A watch reads as expensive from its bracelet and clasp alone, so put the watch head outside
+the frame edge. On a garment, shoot the shoulder with the collar cropped out, or the back
+panel. On a bag, the rear panel with no clasp or hardware in frame.
+The same applies to any surface that normally carries lettering, not just products: shop
+fascias, hanging signs, awnings, receipts, filing labels, book spines. Frame them out. A
+street-level shopfront will always produce fake signage — start the frame above it.
 
-Shadow is not enough on its own — a dim room still gets a legible wordmark painted into it.
-The branded zone has to be outside the frame or facing away. On a garment that means the
-collar, the chest and the cuff interior: shoot the shoulder with the collar cropped out, the
-back panel, or a folded cuff. Never write "no label" and leave the collar in shot.
+IMAGE PROMPT RULES (removing anything, not just branding)
+A negative instruction is not a reliable way to remove something. "No radiator", "no people",
+"no clutter" get ignored the same way "no logos" does, because the model has nothing to put
+in that space instead. Name what occupies it. To clear the wall under a window, write "a long
+low upholstered bench running the full width of the wall beneath the window sill"; to empty a
+room, write what the empty floor is made of and what light falls on it. Say what IS there,
+and the unwanted thing has nowhere to appear.
 
-IMAGE PROMPT RULES (readable subject, dark frame)
+IMAGE PROMPT RULES (readable subject, daylight with a shaded top)
 Every prompt needs a subject a viewer can name in one glance. A macro of a smooth painted
-panel or a plain wall is not a subject — it returns an abstract blur that communicates nothing
-and, when it comes back pale, leaves the white captions with almost no contrast. Crop tight on
-something with an identifiable shape instead: a nose and cockpit glass rather than a fuselage
-panel, an engine intake rather than a cowling surface.
-Give every prompt a source of darkness — night, a dim interior, shadow falling across the
-subject, a single hard light. The finished frame carries white captions across its lower third
-and a large number card in its upper third, so a bright evenly-lit image is a defect even when
-it is a good photograph.
+panel or a plain wall is not a subject — it returns an abstract blur that communicates nothing.
+Crop tight on something with an identifiable shape instead: a nose and cockpit glass rather
+than a fuselage panel, an engine intake rather than a cowling surface.
+Shoot in daylight. Bright natural light, clear sky, sunlight falling through windows — the
+channel is no longer a night-lit channel.
+Daylight has one hard constraint. The finished frame carries a large cream-and-gold number
+card across its upper third and white captions across its lower third, and cream on a pale
+surface disappears. So every prompt must put the TOP THIRD of the frame in shadow or in deep
+colour while the subject stays in sunlight: a deep blue sky above the subject, a ceiling
+falling into shadow, a shaded wall behind a sunlit object, the subject sitting low in frame.
+Never let the top third be a white wall, an overcast sky, a blank panel or blown-out glass.
+Do not ask for this with the word "shadow" alone - that either gets ignored or darkens the
+whole frame. NAME THE DARK OBJECT that fills the top band: a dark timber panelled wall, a
+black extraction hood, a coffered ceiling, a deep blue sky, a stone vault. The subject stays
+in sunlight below it.
+This matters most on scenes that carry a bigNumber; check those first.
 
 STOCK QUERY
 stockQuery is a fallback search term for stock photo libraries, used when images are sourced
@@ -134,8 +168,8 @@ export async function generateScript(topic: string): Promise<VideoScript> {
 
   const script = VideoScriptSchema.parse(JSON.parse(text));
 
-  if (script.scenes.length < 4) {
-    throw new Error(`Sadece ${script.scenes.length} sahne üretildi; en az 6 bekleniyor.`);
+  if (script.scenes.length < 8) {
+    throw new Error(`Sadece ${script.scenes.length} sahne üretildi; en az 8 bekleniyor.`);
   }
 
   return script;
