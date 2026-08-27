@@ -1,0 +1,87 @@
+{
+  "title": "Booked out for a year, and still losing money",
+  "description": "A three-star dining room turns away hundreds of people a night and still barely clears a margin. Follow the staff ratio, the cover count and the cellar and the third star stops looking like a prize and starts looking like a running cost the kitchen agreed to carry.",
+  "tags": [
+    "restaurants",
+    "fine dining",
+    "luxury",
+    "economics",
+    "three star restaurant",
+    "margins",
+    "hospitality",
+    "business",
+    "money",
+    "food",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "This restaurant is booked out for a year. It loses money.",
+      "imagePrompt": "An empty fine dining room in bright morning light, round tables dressed in white linen with glassware set, tall windows along one wall throwing broad bands of sunlight across a pale stone floor, the coffered timber ceiling and upper walls falling into deep shadow across the whole top third of the frame, no menus, no signs, no lettering, no people",
+      "stockQuery": "empty dining room",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "The third star arrived, and with it a standard the kitchen has to hold every single night.",
+      "imagePrompt": "A gleaming professional kitchen pass in bright daylight, polished stainless steel counter with sharp reflections of the window light, one crisply folded white cloth resting on it, hard directional sunlight raking in from the left, the copper extraction hood and ceiling above falling into deep shadow across the entire top third of the frame, no people, no tickets, no labels, no lettering",
+      "stockQuery": "kitchen pass steel",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "Staff comes first. A room like this runs close to two employees for every guest sitting down.",
+      "imagePrompt": "Two waitstaff in crisp black-and-white uniforms setting a table in a luxury restaurant dining room, framed from behind and from the side so no faces are visible, bright daylight streaming through tall windows onto the linen and glassware, the coffered ceiling and upper walls falling into deep shadow across the entire top third of the frame, no name tags, no lettering",
+      "stockQuery": "service jackets rail",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "2:1",
+        "label": "staff per guest"
+      }
+    },
+    {
+      "narration": "The room stays small on purpose. Forty covers a night, and not one more.",
+      "imagePrompt": "A well-dressed couple dining at an elegant table for two in a luxury restaurant, framed from behind or in soft focus so no faces are identifiable, white linen and glassware catching warm daylight raking in from the side, a dark timber panelled wall rising behind them and filling the entire top third of the frame, no window and no bright surface in the top of the frame, no menus, no lettering",
+      "stockQuery": "dressed table window",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "40",
+        "label": "covers a night"
+      }
+    },
+    {
+      "narration": "Each cover carries linen, flowers, a cellar nobody drinks and produce that never leaves the pass.",
+      "imagePrompt": "A wine cellar in bright daylight, long rows of plain unlabelled bottles in pale oak racks clearly lit by a wide open doorway, the lower two thirds of the frame bright and easy to read, the dark stone vaulted ceiling filling the top third, no labels, no text, no people",
+      "stockQuery": "wine cellar racks",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "$120",
+        "label": "food cost per cover"
+      }
+    },
+    {
+      "narration": "Charge four hundred a head and the margin is still thinner than the pizzeria down the street.",
+      "imagePrompt": "A single empty white plate on a dark steel kitchen pass, lit by warm daylight raking across it from the left, the plate sitting in the lower half of the frame, a dark extraction hood filling the entire top third of the frame with no window and no bright surface behind it, hands out of frame, no people, no tickets, no lettering",
+      "stockQuery": "plated dish pass",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "5%",
+        "label": "margin in a good year"
+      }
+    },
+    {
+      "narration": "So the star is not a reward for the cooking. It is a cost the kitchen agrees to carry.",
+      "imagePrompt": "A chef's hands using fine tweezers to place a single herb leaf on a plated dish with total precision, pressed white cuffs in bright daylight raking across the steel counter, the extraction hood and ceiling above in deep shadow filling the entire top third of the frame, no face, no tickets, no lettering",
+      "stockQuery": "white flowers buckets",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "The year of bookings is not the profit. The year of bookings is what keeping the star costs.",
+      "imagePrompt": "An empty fine dining room seen from the doorway in late afternoon light, tables dressed and untouched, long shadows stretching across the floor, the ceiling and upper walls dark across the whole top third of the frame, no menus, no signs, no lettering, no people",
+      "stockQuery": "dining room doorway",
+      "motion": "zoom-out",
+      "bigNumber": null
+    }
+  ]
+}

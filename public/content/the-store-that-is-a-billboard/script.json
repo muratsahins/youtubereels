@@ -1,0 +1,87 @@
+{
+  "title": "The flagship store is a billboard you walk into",
+  "description": "A corner boutique on one of the most expensive retail streets on earth sells almost nothing on a normal day, and the brand is perfectly happy about it. Follow the lease and it stops looking like a shop that is failing and starts looking like an advertising budget with a door.",
+  "tags": [
+    "luxury",
+    "retail",
+    "economics",
+    "advertising",
+    "marketing",
+    "brands",
+    "commercial real estate",
+    "flagship store",
+    "money",
+    "business",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "This shop sells almost nothing. It is not in trouble.",
+      "imagePrompt": "Daylight exterior of an empty luxury boutique on a street corner, tall plate glass windows reflecting a bright sky and the pale buildings opposite, carved limestone facade, the signage fascia cropped above the top edge of the frame, wide clean pavement, no people",
+      "stockQuery": "luxury boutique storefront",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "It stands on a corner where retail space rents for thousands of dollars per square foot a year.",
+      "imagePrompt": "Tight low angle of the upper storeys and carved stone cornice of a pale limestone corner building against a clear blue sky, only masonry, cornice, balustrade and tall empty windows in frame, the frame ends well above street level so no ground floor, no shopfront, no awning, no sign board and no lettering appear anywhere, curtains drawn behind the windows, strong directional sunlight, crisp shadows, no people",
+      "stockQuery": "stone facade daylight",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "$3,000",
+        "label": "rent per square foot"
+      }
+    },
+    {
+      "narration": "One store, one floor, one year, and the lease alone runs into eight figures.",
+      "imagePrompt": "A vast empty luxury boutique interior in daylight, one bright band of sunlight falling across a polished cream marble floor in the lower half of the frame, bare display plinths with nothing on them, the high ceiling and upper walls falling into deep shadow across the top third of the frame, no merchandise, no people",
+      "stockQuery": "empty boutique interior",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "$25M",
+        "label": "annual rent, one store"
+      }
+    },
+    {
+      "narration": "To cover that on sales alone, it would need to sell a handbag every four minutes it is open.",
+      "imagePrompt": "A plain unbranded structured leather handbag seen strictly from the back on a pale stone display plinth, the smooth rear panel filling the frame, no clasp, no lock, no buckle and no hardware visible, a single shaft of daylight falling only on the bag and plinth, the wall and the whole upper third of the frame in deep shadow, no people",
+      "stockQuery": "handbag display plinth",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "4 MIN",
+        "label": "per bag, just for rent"
+      }
+    },
+    {
+      "narration": "It does not. On a quiet Tuesday, a handful of people buy anything at all.",
+      "imagePrompt": "A long sales counter of pale polished stone in an empty luxury boutique, one small parcel wrapped in tissue paper sitting alone on it, bright daylight from a tall window to one side, no people",
+      "stockQuery": "boutique counter parcel",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "The company knows. Internally the lease is not filed under retail. It is filed under marketing.",
+      "imagePrompt": "A bright corporate archive room with long rows of pale grey steel filing drawers, one drawer pulled half open, blank unlabelled drawer fronts, daylight through a window at the far end, no people",
+      "stockQuery": "filing drawers archive",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "About a tenth of what the brand takes in goes to telling you it exists, and this corner is the loudest thing it owns.",
+      "imagePrompt": "A huge empty billboard on a city rooftop photographed from below at midday, the blank white panel sitting low in the frame, a deep saturated blue sky filling and darkening the upper third of the frame above it, glass towers in shadow behind, no image and no text on the panel, strong sunlight, sharp shadows",
+      "stockQuery": "blank billboard daylight",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "10%",
+        "label": "of revenue, on marketing"
+      }
+    },
+    {
+      "narration": "So the shop is not failing to sell you anything. Selling was never what it was for.",
+      "imagePrompt": "Daylight exterior of an empty luxury boutique on a street corner seen from across the road, sunlight raking along the pale stone facade and the glass, one empty window display visible, signage fascia cropped out of frame, no people",
+      "stockQuery": "boutique window night",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

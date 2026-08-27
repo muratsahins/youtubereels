@@ -1,0 +1,87 @@
+{
+  "title": "The $9,000 watch that costs $27,000 today",
+  "description": "The boutique refuses to sell you the watch and puts you on a five-year list. A private dealer across town has one in a safe right now, at three times the price. Follow the money through a single watch and the manufacturer turns out to collect none of it.",
+  "tags": [
+    "watches",
+    "grey market",
+    "luxury",
+    "economics",
+    "scarcity",
+    "resale value",
+    "money",
+    "wealth",
+    "swiss watches",
+    "arbitrage",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "The boutique will not sell you this watch. He will.",
+      "imagePrompt": "Extreme macro of the brushed steel bracelet links and side case profile of a luxury sports watch resting on a dark walnut desk beside the edge of a closed steel safe door, camera at bracelet level so the dial is entirely outside the frame, single hard desk lamp raking across the polished links, deep black shadow filling most of the frame",
+      "stockQuery": "luxury watch macro",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "He is not the manufacturer, and he is not an authorized dealer. He is a private dealer with a safe.",
+      "imagePrompt": "A heavy steel vault safe door standing half open in a dim private office, thick round chrome locking bolts protruding from the edge of the door, spoked steel handle wheel on its face, no dial and no numerals anywhere, dark wood panelling behind it, single warm light raking across the bolt work, deep shadow, no people",
+      "stockQuery": "open safe office",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "He bought it at the list price. The same price the boutique refused to take from you.",
+      "imagePrompt": "Close-up looking straight down into a plain unmarked box lined with white tissue paper, a coiled stainless steel luxury watch bracelet filling the box, the watch head cropped out of frame at the top edge so no dial is visible, single hard overhead light, dark surround, deep shadow",
+      "stockQuery": "watch box bracelet",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "$9,000",
+        "label": "what the dealer paid"
+      }
+    },
+    {
+      "narration": "This afternoon, he sells it to you for three times that.",
+      "imagePrompt": "Two identical brushed stainless steel luxury watch bracelets laid parallel on dark polished stone, photographed from directly above the folding clasps, both watch heads cropped outside the top edge of the frame so no dial and no case front is visible anywhere, only bracelet links and clasps in shot, one lit warm and one lit cold, dramatic low-key lighting, black background",
+      "stockQuery": "two luxury watches",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "3x",
+        "label": "list price, same day"
+      }
+    },
+    {
+      "narration": "That premium is not a fee for the watch. It is a fee for skipping the queue.",
+      "imagePrompt": "A velvet-lined watch tray in a dim room holding one steel luxury watch face-down showing its polished caseback, a row of empty velvet slots beside it, hard side light, deep shadow, minimal composition",
+      "stockQuery": "velvet watch tray",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "Holding that queue costs him money. A serious dealer keeps millions of dollars asleep in a safe, earning nothing until somebody walks in.",
+      "imagePrompt": "Stacks of identical plain unmarked watch presentation boxes filling the steel shelves of an open vault safe, closed lids, no dials and no watches visible anywhere, matte dark grey card and smooth leather texture, single hard light from above raking across the stacked edges, deep shadow between the shelves, no people",
+      "stockQuery": "watch boxes safe",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "$5M",
+        "label": "stock asleep in a safe"
+      }
+    },
+    {
+      "narration": "The manufacturer sees none of that markup. It collected the list price once, years ago, and moved on.",
+      "imagePrompt": "A vast empty watch manufacture assembly hall at night, long steel benches with covered workstations receding into darkness, cold moonlight falling through tall windows, no people, deep shadow",
+      "stockQuery": "empty factory night",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "$0",
+        "label": "to the manufacturer"
+      }
+    },
+    {
+      "narration": "So the waiting list did not just delay the sale. It handed the price to somebody else.",
+      "imagePrompt": "A heavy steel vault safe door swinging shut in a dim private office, thick chrome locking bolts sliding into the door frame, spoked steel handle wheel catching a single warm light, no dial and no numerals, deep black shadow closing in around it, no people",
+      "stockQuery": "safe door closing",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

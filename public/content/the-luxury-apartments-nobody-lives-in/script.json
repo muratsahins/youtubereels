@@ -1,0 +1,89 @@
+{
+  "title": "The tower is sold out and nobody lives there",
+  "description": "Some of the most expensive apartments in the world are bought in order to stay empty. The lights stay off, the yearly tax on leaving them dark gets paid, and a tenant was never part of the plan.",
+  "tags": [
+    "empty homes",
+    "luxury real estate",
+    "real estate",
+    "wealth",
+    "money",
+    "economics",
+    "property",
+    "ghost towers",
+    "housing",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "Half the windows in that tower have never been switched on.",
+      "imagePrompt": "Night exterior of a tall luxury residential tower seen from street level, almost every apartment window unlit, only two or three windows glowing, glass and pale stone facade, wet asphalt below reflecting the few lit windows, deep blue-black sky",
+      "stockQuery": "apartment tower night",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "The units are sold. In some new towers, one address in four is nobody's daily life.",
+      "imagePrompt": "Night aerial of a cluster of luxury apartment towers in a city skyline, the majority of apartment windows unlit, a scattering of warm lit units, dark river and dark streets far below, cold moonlight raking across the glass facades",
+      "stockQuery": "city skyline night",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "1 IN 4",
+        "label": "not a primary home"
+      }
+    },
+    {
+      "narration": "A twenty-million-dollar apartment is not shelter. It is money parked where a bank statement cannot follow.",
+      "imagePrompt": "Empty living room of a high-floor luxury apartment at night, floor-to-ceiling glass, city lights far below, polished pale stone floor, a single armchair under a white dust sheet, one shaft of moonlight across the room, deep shadow in the corners",
+      "stockQuery": "empty luxury apartment",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "$20M",
+        "label": "purchase price"
+      }
+    },
+    {
+      "narration": "Leaving it empty is not free. Taxes and charges run past a quarter million dollars a year.",
+      "imagePrompt": "Underground parking level of a luxury apartment tower at night, rows of empty numbered parking bays, one car hidden under a fitted grey cover, spotless painted concrete floor, a single row of overhead lights, deep shadow down the far end",
+      "stockQuery": "underground parking garage",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "$250K",
+        "label": "a year, standing empty"
+      }
+    },
+    {
+      "narration": "The owner might sleep there twelve nights out of the year.",
+      "imagePrompt": "Made bed in an unused luxury apartment bedroom at night, crisp white linen without a single wrinkle, blackout curtains half drawn across a city view, bedside lamp switched off, cold blue light falling across the sheets, deep shadow",
+      "stockQuery": "luxury bedroom night",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "12",
+        "label": "nights used per year"
+      }
+    },
+    {
+      "narration": "Cities noticed. Several now tax a home left dark, a few percent of its value, every year.",
+      "imagePrompt": "Dark facade of a luxury apartment tower at dusk photographed straight on, a strict grid of identical unlit windows filling the frame, one warm lit apartment breaking the pattern, cold blue evening light, minimal composition",
+      "stockQuery": "apartment facade windows",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "3%",
+        "label": "empty-home tax"
+      }
+    },
+    {
+      "narration": "The tax gets paid. A tenant was never the point, and would only complicate the exit.",
+      "imagePrompt": "Rows of closed brass mailboxes in the dim lobby of a luxury apartment tower, one small door slightly ajar, a single overhead light raking across the polished metal, deep shadow around the edges, macro detail",
+      "stockQuery": "brass mailboxes lobby",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "So the lights stay off. The building is sold out, and nobody is home.",
+      "imagePrompt": "Night exterior of a tall luxury residential tower seen from across still black water, the entire grid of apartment windows dark, only a faint lobby glow at street level, the building mirrored in the water, minimal composition",
+      "stockQuery": "tower reflection water",
+      "motion": "zoom-out",
+      "bigNumber": null
+    }
+  ]
+}

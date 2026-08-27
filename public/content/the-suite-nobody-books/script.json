@@ -1,0 +1,104 @@
+{
+  "title": "The suite nobody books is the one that pays",
+  "description": "The top-floor suite is listed at a number almost nobody pays, and it sits empty most of the year. It is not really inventory. It is the first number a guest sees, and every cheaper rate underneath it gets read against it.",
+  "tags": [
+    "hotels",
+    "pricing",
+    "luxury",
+    "economics",
+    "price anchoring",
+    "hospitality",
+    "revenue management",
+    "business",
+    "money",
+    "travel",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "Nobody books the top suite. That is exactly the point.",
+      "imagePrompt": "A vast empty hotel suite living room in bright daylight, floor to ceiling windows along one wall with a city far below, pale sofas and a low stone table sunlit in the lower half of the frame, a dark walnut coffered ceiling filling the entire top third of the frame, no people, no signs, no lettering",
+      "stockQuery": "hotel suite living room",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "It takes the whole top floor, it is listed publicly like every other room, and it stands empty most of the year.",
+      "imagePrompt": "The rooftop-floor suite of an extremely expensive hotel in bright daylight, a wide living room opening through tall glass onto a private roof terrace, deep pile rugs, marble and dark walnut, an infinity edge pool on the terrace beyond with a city skyline behind it, a dark coffered ceiling filling the entire top third of the frame, nobody in frame, no signage, no lettering",
+      "stockQuery": "rooftop suite terrace",
+      "motion": "pan-left",
+      "bigNumber": null
+    },
+    {
+      "narration": "Twenty five thousand dollars a night, printed on the same page as the standard doubles.",
+      "imagePrompt": "An empty hotel suite bedroom in morning light, a made bed with crisp white linen brightly sunlit beside a tall window, a dark timber panelled wall filling the entire top third of the frame, no papers, no cards, no artwork, no lettering, no people",
+      "stockQuery": "hotel suite bedroom",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "$25,000",
+        "label": "a night, published"
+      }
+    },
+    {
+      "narration": "In a good year it might sell twenty nights, mostly to people who never asked what it cost.",
+      "imagePrompt": "A deserted hotel suite terrace seen from inside the suite through wide open glass doors, the dark interior ceiling and dark door frame filling the entire top third of the frame, two empty loungers and a small side table in bright sunlight beyond the threshold, city rooftops in the distance, nobody in frame, no figures, no signage, no lettering",
+      "stockQuery": "hotel terrace loungers",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "20",
+        "label": "nights sold a year"
+      }
+    },
+    {
+      "narration": "Six staff answer to that suite alone when it is occupied, so on its own it barely washes its face.",
+      "imagePrompt": "Six hotel staff standing in one perfectly aligned row in a bright marble corridor, seen from behind as dark silhouettes against the daylight, identical uniforms, straight backs, evenly spaced, hands at their sides, no faces visible, immaculate symmetry and order, a dark ceiling filling the entire top third of the frame, no name tags, no signage, no lettering",
+      "stockQuery": "hotel staff line corridor",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "6",
+        "label": "staff for one suite"
+      }
+    },
+    {
+      "narration": "But the suite is not really a room. It is the first number a guest ever sees.",
+      "imagePrompt": "The reception hall of an extravagantly expensive hotel in bright daylight, a long polished onyx counter, gilded columns, a vast marble floor with an inlaid geometric pattern, huge symmetrical white flower arrangements, everything immaculate and perfectly aligned, tack sharp focus throughout, a dark coffered ceiling filling the entire top third of the frame, nobody in frame, no screens, no brochures, no signage, no lettering",
+      "stockQuery": "grand hotel reception hall",
+      "motion": "pan-left",
+      "bigNumber": null
+    },
+    {
+      "narration": "Every rate below it gets read against that number, and the gap does the selling for you.",
+      "imagePrompt": "A bright hotel corridor with a deep red patterned carpet running down its length, identical dark timber doors on both sides, tall windows throwing daylight across the carpet, gilded wall sconces, perfectly symmetrical perspective, a dark coffered ceiling filling the entire top third of the frame, no room numbers, no plaques, no lettering, no people",
+      "stockQuery": "red carpet hotel corridor",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "28x",
+        "label": "the gap it creates"
+      }
+    },
+    {
+      "narration": "The room you actually book is nine hundred. Next to twenty five thousand, nine hundred reads like restraint.",
+      "imagePrompt": "A bright and luxurious hotel room in full daylight, high ceiling, a wide made bed with layered cream and soft blue linen, a deep teal velvet armchair, a tall window with sheer curtains, a long low upholstered bench in pale silk running the full width of the wall directly beneath the window sill and covering that wall completely, a marble topped console with fresh flowers and a brass lamp, sunlight falling in bands across a thick pale carpet, a dark timber ceiling and dark upper wall filling the entire top third of the frame, no signage, no lettering, no people",
+      "stockQuery": "luxury hotel room daylight",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "$900",
+        "label": "the room you book"
+      }
+    },
+    {
+      "narration": "Strip the suite out of the price list and the same room suddenly looks like the expensive option.",
+      "imagePrompt": "A woman in a striking red dress standing alone with her back fully to the camera in a vast pale marble hotel lobby, one hand on the handle of a suitcase beside her, her face completely out of view, the red dress the only saturated colour in an otherwise cream and grey scene, bright daylight across the stone floor, a dark timber ceiling soffit filling the entire top third of the frame, no other people, no signage, no lettering",
+      "stockQuery": "woman red dress lobby",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "So nobody books the top suite, and it still moves more money than any room in the building.",
+      "imagePrompt": "The same vast empty hotel suite living room in late afternoon light, long shadows stretching across the floor, the city visible through floor to ceiling windows, a dark walnut coffered ceiling filling the entire top third of the frame, no people, no signs, no lettering",
+      "stockQuery": "hotel suite afternoon",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

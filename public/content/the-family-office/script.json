@@ -1,0 +1,89 @@
+{
+  "title": "The company with 12 employees and one client",
+  "description": "A family office is a company built to manage one family's money and nothing else. It only starts to make sense above a hundred million dollars, and it costs about one percent of the fortune every year just to run.",
+  "tags": [
+    "family office",
+    "wealth management",
+    "wealth",
+    "money",
+    "economics",
+    "investing",
+    "private wealth",
+    "finance",
+    "rich families",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "This company has twelve employees and exactly one client.",
+      "imagePrompt": "A bright glass-walled boardroom high in a private bank tower, a cheerful group of well-dressed executives in warm mid-conversation around a polished table set beside floor-to-ceiling windows, golden daylight streaming across the table, a sprawling sunlit city skyline outside the glass with the open sea visible on the distant horizon, hand-stitched leather chairs, a dark coffered ceiling and shadowed upper wall filling the entire top third of the frame, everything in crisp sharp focus, deep depth of field",
+      "stockQuery": "empty boardroom table",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "1",
+        "label": "client"
+      }
+    },
+    {
+      "narration": "It is called a family office, and it exists to run one fortune like a business.",
+      "imagePrompt": "Corner office of a single-family office atop a private bank tower in bright midday sunlight, a warm honey-toned wood partner's desk with rich saturated color, a polished brass banker's lamp and a leather folder, floor-to-ceiling windows with a crisp, sharply detailed sunlit city skyline stretching to the horizon, warm golden light filling the room, everything in crisp sharp focus from front to back",
+      "stockQuery": "corner office city view",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "Below about a hundred million dollars in assets, building one does not make sense.",
+      "imagePrompt": "Heavy hand-polished brass and gold vault door standing open in the sunlit stone corridor of a private bank, rich warm gold and amber tones glowing off the polished metal, a deep blue sky glimpsed through a high arched window filling the top of the frame in shadow, a warm terracotta stone floor filling the entire bottom edge of the frame, vivid saturated color, everything in crisp sharp focus, deep depth of field",
+      "stockQuery": "vault door",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "$100M",
+        "label": "the usual threshold"
+      }
+    },
+    {
+      "narration": "Running it costs roughly one percent of the money, every year.",
+      "imagePrompt": "A bright modern open-plan office of a single-family office, colorful contemporary furniture in warm jewel tones, a small group of visibly happy staff smiling and collaborating around a sleek glass table with laptops and folders, floor-to-ceiling windows flooding the room with daylight, vivid saturated color, a dark modern ceiling with recessed lighting filling the top third of the frame in shadow, everything in crisp sharp focus, deep depth of field",
+      "stockQuery": "modern office team",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "1%",
+        "label": "of assets, every year"
+      }
+    },
+    {
+      "narration": "So the office burns a million dollars a year before it earns anything.",
+      "imagePrompt": "A vivid, colorful open-plan floor of a single-family office, many well-dressed staff working at bright modern desks among warm jewel-toned furnishings and tall potted palms, floor-to-ceiling windows flooding the space with golden daylight and a distant sunlit skyline, a dark modern ceiling with track lighting filling the top third of the frame in shadow, vivid saturated color, everything in crisp sharp focus, deep depth of field",
+      "stockQuery": "busy modern office staff",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "$1M",
+        "label": "a year, just to exist"
+      }
+    },
+    {
+      "narration": "The staff are not salespeople. Nobody in the building is trying to sell the family a product.",
+      "imagePrompt": "Reception area of a single-family office in warm bright daylight, a polished rose-gold marble counter with a single brass bell, two rich cognac-leather armchairs beside a low table with fresh flowers, a tall window throwing a vivid wedge of golden light across a book-matched marble floor with warm veining, a dark panelled wall filling the top of the frame in shadow, vivid saturated color, everything in crisp sharp focus",
+      "stockQuery": "office reception marble",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "0",
+        "label": "products for sale"
+      }
+    },
+    {
+      "narration": "That is what the fee actually buys: advice with nothing standing behind it.",
+      "imagePrompt": "Two rich cognac-leather armchairs facing each other across a low dark stone table with a bronze inlay, in the sunlit private study of a single-family office, floor-to-ceiling bookshelves glowing warm amber in soft shadow behind them, hard golden daylight entering from a side window and washing across the floor, vivid warm saturated color, everything in crisp sharp focus",
+      "stockQuery": "study leather armchairs",
+      "motion": "zoom-out",
+      "bigNumber": null
+    },
+    {
+      "narration": "So: twelve people, one client, and a payroll that only starts to make sense above nine figures.",
+      "imagePrompt": "A bright glass-walled boardroom high in a private bank tower, seen from the head of a polished table where a cheerful group of well-dressed executives sit in warm conversation beside floor-to-ceiling windows, golden daylight streaming across the table, a sunlit city skyline outside the glass with the open sea visible on the distant horizon, hand-stitched leather chairs receding down both sides, a dark coffered ceiling filling the top of the frame in shadow, everything in crisp sharp focus, deep depth of field",
+      "stockQuery": "boardroom table perspective",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

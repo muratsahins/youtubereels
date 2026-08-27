@@ -1,0 +1,89 @@
+{
+  "title": "Nobody has slept in this $15M house since last summer",
+  "description": "The most expensive houses in the world are heated, staffed and cleaned for an owner who shows up about four weeks a year. Follow the running costs and the price of a single night's sleep gets absurd.",
+  "tags": [
+    "luxury villa",
+    "second homes",
+    "real estate",
+    "wealth",
+    "money",
+    "economics",
+    "property",
+    "holiday homes",
+    "cost breakdown",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "Nobody has slept in this house since last summer.",
+      "imagePrompt": "Large modern clifftop luxury villa filling the frame on a bright summer afternoon, cantilevered travertine terraces and floor-to-ceiling glass, deep shade under the long roof overhangs, a still turquoise infinity pool along the near edge, empty terraces, deep blue Mediterranean sea and clear sky behind",
+      "stockQuery": "luxury villa night",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "It is not abandoned. The pool is heated, the lawn is cut, the fridge is stocked.",
+      "imagePrompt": "Infinity pool of a luxury villa at midday in summer, perfectly still turquoise water, a freshly mown lawn strip and clipped hedges beside it, empty teak sun loungers with folded white towels under the hard shadow of a wide parasol, the stone villa behind, sharp noon shadows across the deck",
+      "stockQuery": "infinity pool night",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "In some resort towns, three houses in four sit empty out of season.",
+      "imagePrompt": "Row of three large modern lakeside luxury villas on a sunny summer day seen from the water, flat roofs, pale stone and full-height glass facades, private timber docks with no boats moored, blinds closed behind the glass, a dark forested mountain filling the upper frame behind them, deep blue lake water lying in shadow across the foreground",
+      "stockQuery": "lakeside villas aerial",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "3 IN 4",
+        "label": "empty out of season"
+      }
+    },
+    {
+      "narration": "A fifteen-million-dollar villa is not a holiday home. It is a vault with a view.",
+      "imagePrompt": "Single large modern beachfront luxury villa filling the frame at midday, one wide low storey under a long overhanging roof casting deep shade across the whole facade, floor-to-ceiling glass, infinity pool and teak deck directly in front, palm fronds hanging into the top corners of the frame, hard palm shadows striping the sand in the foreground",
+      "stockQuery": "beachfront villa dusk",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "$15M",
+        "label": "purchase price"
+      }
+    },
+    {
+      "narration": "Keeping it ready costs staff, security, insurance and tax, around four hundred thousand a year.",
+      "imagePrompt": "Kitchen of a luxury villa on a summer morning, long book-matched marble island, dark lacquered joinery with brass handles, a row of copper pans, hard sunlight falling in bright bands through slatted shutters onto the marble, the rest of the room in deep shadow, no people",
+      "stockQuery": "luxury kitchen night",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "$400K",
+        "label": "a year to keep it ready"
+      }
+    },
+    {
+      "narration": "The owner stays about four weeks, split across the year.",
+      "imagePrompt": "Master bedroom of a luxury sea-view villa on a bright summer day seen from the shaded side of the room, dark timber ceiling and a deep terrace overhang shading the foreground, wide made bed with crisp untouched white linen catching a single band of sunlight, floor-to-ceiling glass wall open onto a blue sea, deep shadow across the lower part of the frame",
+      "stockQuery": "villa bedroom sea view",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "28",
+        "label": "nights used per year"
+      }
+    },
+    {
+      "narration": "That works out near fourteen thousand dollars a night, before anyone turns on a light.",
+      "imagePrompt": "Covered terrace of a luxury villa at midday in summer, long stone dining table set for nobody with chairs pushed in, deep shade under a timber pergola, hard shadow bars from the pergola beams striping the table, bright sunlit pool and blue sea beyond the balustrade",
+      "stockQuery": "villa terrace night",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "$14K",
+        "label": "per night actually used"
+      }
+    },
+    {
+      "narration": "So the pool stays warm, the gate stays shut, and nobody has slept here since last summer.",
+      "imagePrompt": "Wide summer daytime exterior of a large clifftop luxury villa seen from the sea side, stone terraces and glass walls in full sun, a still turquoise infinity pool, a closed gate and empty driveway to one side, deep blue sea below and clear sky above",
+      "stockQuery": "villa pool night",
+      "motion": "zoom-out",
+      "bigNumber": null
+    }
+  ]
+}
