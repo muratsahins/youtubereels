@@ -16,7 +16,7 @@
   "scenes": [
     {
       "narration": "This club turns away most people who can pay.",
-      "imagePrompt": "Extreme close-up on a heavy brass door pull and polished brass kick plate set into a solid dark walnut door, a gloved hand resting on the handle, the door open just a crack revealing a warm golden glow and a soft blurred marble hallway beyond, a rough-cut charcoal stone door surround filling the top third of the frame in shadow, honey-toned marble threshold glowing underfoot in bright daylight, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
+      "imagePrompt": "Extreme close-up on a heavy brass door pull and polished brass kick plate set into a solid dark walnut door of the most exclusive private members' club in the city, a crisp white cotton glove with a glinting gold cufflink at the wrist resting on the handle, the door open just a crack revealing a warm golden glow and a soft blurred marble hallway beyond, a rough-cut charcoal stone door surround filling the top third of the frame in shadow, honey-toned marble threshold glowing underfoot in bright daylight, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
       "stockQuery": "club entrance brass door",
       "motion": "zoom-in",
       "bigNumber": {
@@ -26,7 +26,7 @@
     },
     {
       "narration": "Getting in starts with an initiation fee of fifty thousand dollars.",
-      "imagePrompt": "A heavy brass fountain pen laid diagonally across a closed plain cream leather portfolio, shot from a low raking angle across a polished walnut reception desk inside a private members' club, the portfolio's bare cover catching a sliver of warm midday sunlight while most of it falls into soft shadow, a dark wood-panelled wall filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
+      "imagePrompt": "A heavy sterling silver fountain pen laid diagonally across a closed bespoke cream leather portfolio with a discreet blind-embossed monogram, a white-gloved concierge's hand with a gold cufflink at the crisp shirt cuff setting it precisely square, shot from a low raking angle across a polished walnut reception desk inside the most exclusive private members' club in the city, the portfolio catching a sliver of warm midday sunlight while most of it falls into soft shadow, a dark wood-panelled wall filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
       "stockQuery": "leather folder desk pen",
       "motion": "pan-right",
       "bigNumber": {
@@ -36,7 +36,7 @@
     },
     {
       "narration": "Then come annual dues of another twenty thousand, whether you ever visit or not.",
-      "imagePrompt": "An empty round dining table inside a private members' club dining room, a crisp white linen cloth, a single unused place setting with heavy silverware and a folded napkin, warm daylight falling across the table from a tall window, a dark coffered ceiling filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
+      "imagePrompt": "An empty round dining table set for one inside the dining room of the most exclusive private members' club in the city, a heavily starched white damask cloth, fine bone china and a full canteen of sterling silver flatware precisely aligned, a folded linen napkin secured with a silver ring, warm daylight falling across the table from a tall window, a dark coffered ceiling filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
       "stockQuery": "empty dining table linen",
       "motion": "zoom-out",
       "bigNumber": {
@@ -46,21 +46,21 @@
     },
     {
       "narration": "The dining room and the bar still lose money on almost every meal served.",
-      "imagePrompt": "A richly stocked private club bar at quiet midday, rows of backlit crystal decanters on a dark mirrored shelf, a bartender's hands polishing a glass behind a polished brass rail, warm daylight spilling in from a side window, a dark timber ceiling beam filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
+      "imagePrompt": "Macro close-up of a single white-gloved hand in a crisp shirt cuff and onyx cufflink, holding a cut-crystal tumbler on the mahogany counter of the most exclusive private members' club in the city, a folded white linen cloth beside it, the frame filled edge to edge by the hand, glass and counter with no torso or body visible at all, rows of backlit cut-crystal decanters blurred on a dark shelf behind, warm daylight spilling in from a tall side window, a dark timber ceiling beam filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
       "stockQuery": "private club bar decanters",
       "motion": "pan-left",
       "bigNumber": null
     },
     {
       "narration": "So the money was never really paying for the food, or the room.",
-      "imagePrompt": "A quiet private club library lounge in warm daylight, two deep cognac-leather wingback chairs beside an unlit stone fireplace, tall bookshelves glowing amber in soft shadow, a shaft of sunlight crossing a herringbone parquet floor, a dark plaster ceiling filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
+      "imagePrompt": "A quiet library lounge inside the most exclusive private members' club in the city, warm daylight, two deep cognac-leather wingback chairs beside an unlit marble fireplace, a crystal tumbler resting on a leather-topped side table, tall bookshelves glowing amber in soft shadow, a shaft of sunlight crossing a herringbone parquet floor, a dark plaster ceiling filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
       "stockQuery": "club library fireplace armchairs",
       "motion": "zoom-in",
       "bigNumber": null
     },
     {
       "narration": "It pays a committee whose entire job is deciding who does not belong.",
-      "imagePrompt": "A private members' club committee room, a long dark walnut table set with a row of closed leather folders and fountain pens under warm daylight, an empty high-backed chair at the head, floor-to-ceiling curtains framing a bright window, a dark coffered ceiling filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
+      "imagePrompt": "The committee room of the most exclusive private members' club in the city, a long dark walnut table set with a row of closed leather folders, sterling silver inkwells and fountain pens under warm daylight, an empty high-backed leather chair at the head, floor-to-ceiling curtains framing a bright window, a dark coffered ceiling filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
       "stockQuery": "committee room table folders",
       "motion": "pan-right",
       "bigNumber": {
@@ -70,14 +70,14 @@
     },
     {
       "narration": "Membership works less like a purchase and more like a background check with a price attached.",
-      "imagePrompt": "A pair of hands reviewing a thick cream reference folder at a polished mahogany desk inside a private members' club office, warm afternoon sunlight falling across the paper, a dark leather-bound ledger stacked beside it, a dark wood-panelled wall filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
+      "imagePrompt": "A pair of manicured hands in a crisp white shirt cuff with a gold cufflink, reviewing a thick cream reference folder at a polished mahogany partners' desk inside the membership office of the most exclusive private members' club in the city, warm afternoon sunlight falling across the paper, a dark leather-bound ledger and a sterling silver letter opener stacked beside it, a dark wood-panelled wall filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
       "stockQuery": "reviewing reference folder desk",
       "motion": "zoom-out",
       "bigNumber": null
     },
     {
       "narration": "The fee was never admission. It is the club paying to keep the wrong people out.",
-      "imagePrompt": "Wide view down a warm marble entrance hallway inside a private members' club, seen through a heavy dark walnut door standing ajar, a gloved hand resting on the brass pull in the foreground, golden lantern light glowing along the corridor, a rough-cut charcoal stone door surround filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
+      "imagePrompt": "Wide view down a warm marble entrance hallway inside the most exclusive private members' club in the city, seen through a heavy dark walnut door standing ajar, a white-gloved hand with a gold cufflink resting on the brass pull in the foreground, golden lantern light glowing along the corridor, a rough-cut charcoal stone door surround filling the top third of the frame in shadow, vivid warm saturated color, everything in crisp sharp focus, deep depth of field",
       "stockQuery": "club entrance vestibule wide",
       "motion": "zoom-in",
       "bigNumber": null
