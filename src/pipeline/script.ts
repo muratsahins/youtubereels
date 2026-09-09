@@ -76,11 +76,12 @@ materials or craft techniques — not generic adjectives. Draw from or match the
 or hand-carved stone, hand-stitched leather, nappa leather, suede, calfskin, gilt or gold-leaf
 trim, hand-rubbed oiled oak, walnut, rosewood, burl wood, brushed steel, milled aluminium,
 titanium, forged carbon fibre, mahogany panelling, book-matched veneer or glass, brass fittings,
-bronze, wrought iron, velvet upholstery, cashmere, silk, alcantara, hand-blown glass, Murano
-glass, polished teak, lacquered joinery, marble, onyx, platinum, sapphire crystal, guilloché,
-hand-knotted rug, patina. A prompt that only says "luxury" or "expensive" without naming the
-material has not met this bar and must be rewritten. This is checked automatically after
-generation — a script that fails it does not get saved.
+bronze, wrought iron, velvet upholstery, cashmere, silk, linen, alcantara, hand-blown glass,
+Murano glass, polished teak, lacquered joinery, marble, onyx, platinum, sapphire crystal,
+guilloché, hand-knotted rug, patina, cut crystal, sterling silver, bone china, damask,
+herringbone parquet, bespoke tailoring, coffered ceiling. A prompt that only says "luxury" or
+"expensive" without naming the material has not met this bar and must be rewritten. This is
+checked automatically after generation — a script that fails it does not get saved.
 
 IMAGE PROMPT RULES (branded surfaces)
 Image models ignore "no text" and "no logos" instructions on the one surface of a product that
@@ -137,18 +138,23 @@ bigNumber.label is at most 5 words. Set bigNumber to null for scenes that carry 
 
 /** "top of the market" kuralının otomatik denetimi — script.ts sistem promptundaki listeyle aynı. */
 const PREMIUM_MATERIAL_KEYWORDS = [
-  'hand-cut stone', 'hand-carved', 'hand-stitched', 'nappa leather', 'suede', 'calfskin',
-  'gilt', 'gold-leaf', 'gold leaf', 'hand-rubbed', 'oiled oak', 'walnut', 'rosewood', 'burl',
-  'brushed steel', 'milled aluminium', 'milled aluminum', 'titanium', 'forged carbon',
+  'hand-cut stone', 'hand-carved', 'hand-stitched', 'nappa leather', 'leather', 'suede',
+  'calfskin', 'gilt', 'gold-leaf', 'gold leaf', 'hand-rubbed', 'oiled oak', 'walnut', 'rosewood',
+  'burl', 'brushed steel', 'milled aluminium', 'milled aluminum', 'titanium', 'forged carbon',
   'carbon fibre', 'carbon fiber', 'mahogany', 'book-matched', 'veneer', 'brass', 'bronze',
-  'wrought iron', 'velvet', 'cashmere', 'silk', 'alcantara', 'hand-blown', 'murano',
+  'wrought iron', 'velvet', 'cashmere', 'silk', 'linen', 'alcantara', 'hand-blown', 'murano',
   'polished teak', 'teak', 'lacquer', 'marble', 'onyx', 'platinum', 'sapphire', 'guilloch',
-  'hand-knotted', 'patina', 'chrome',
+  'hand-knotted', 'patina', 'chrome', 'crystal', 'sterling silver', 'bone china', 'damask',
+  'herringbone', 'bespoke', 'coffered',
 ];
 
+/** Tire/boşluk farkı yüzünden ("brushed-steel" vs "brushed steel") yanlış eleme olmasın diye normalize et. */
+const normalizeForMatch = (text: string) => text.toLowerCase().replace(/[-\s]+/g, ' ');
+
 function countPremiumMaterials(imagePrompt: string): number {
-  const lower = imagePrompt.toLowerCase();
-  return PREMIUM_MATERIAL_KEYWORDS.filter((keyword) => lower.includes(keyword)).length;
+  const normalized = normalizeForMatch(imagePrompt);
+  return PREMIUM_MATERIAL_KEYWORDS.filter((keyword) => normalized.includes(normalizeForMatch(keyword)))
+    .length;
 }
 
 /** "top of the market" kuralını zorunlu kılar — yetersiz sahne varsa script hiç kaydedilmez. */

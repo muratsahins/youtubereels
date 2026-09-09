@@ -33,7 +33,7 @@
     },
     {
       "narration": "The entry threshold typically starts around ten million dollars in assets.",
-      "imagePrompt": "Close view of a heavy brushed-stainless-steel private bank vault door with a brass locking wheel standing ajar, warm daylight spilling in from a corridor, dark stone archway in shadow filling the top third, no people",
+      "imagePrompt": "Close view of a heavy brushed steel private bank vault door with a brass locking wheel standing ajar, warm daylight spilling in from a corridor, dark hand-carved stone archway in shadow filling the top third, no people",
       "stockQuery": "bank vault door",
       "motion": "zoom-out",
       "bigNumber": {
@@ -70,7 +70,7 @@
     },
     {
       "narration": "The money was never really the product. The access was.",
-      "imagePrompt": "Private bank rooftop terrace with polished stone paving and a single outdoor seating area behind a brushed-steel railing, overlooking a city skyline in bright daylight, dark building silhouette in shadow filling the top third, no people",
+      "imagePrompt": "Private bank rooftop terrace with hand-cut stone paving and a single outdoor seating area behind a brushed steel railing, overlooking a city skyline in bright daylight, dark building silhouette in shadow filling the top third, no people",
       "stockQuery": "private bank rooftop terrace",
       "motion": "zoom-out",
       "bigNumber": null
