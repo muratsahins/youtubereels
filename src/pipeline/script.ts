@@ -33,8 +33,11 @@ FORMAT RULES
 - Each scene is 1-2 short spoken sentences. No lists, no semicolons, no subordinate clause pileups.
 - Half the scenes must carry a bigNumber: 4 of 8, 5 of 10, 6 of 12. Numbers are the
   retention engine of this format.
-- The final scene closes the loop back to the hook so the video rewatches cleanly.
-- Second person, present tense. Never say "in this video", never greet, never ask for subscribes.
+- The final scene closes the loop back to the hook so the video rewatches cleanly, then adds one
+  short second sentence inviting the viewer to follow and like for more of these breakdowns.
+  Keep that line under 10 words and specific to the channel ("more of these"), never generic
+  ("like and subscribe!") and never a separate scene — it rides in the last scene's narration.
+- Second person, present tense. Never say "in this video", never greet.
 
 NUMBERS
 Use realistic, defensible figures. When an exact figure is genuinely unknowable, use a clearly
@@ -68,6 +71,16 @@ category: a private members' club over a nice restaurant, a bespoke tailoring wo
 flagship store rack, a super-prime penthouse over a merely expensive apartment, hand-finished
 joinery over veneer. This applies to the setting as much as the object — corridors, waiting
 rooms and back-of-house spaces should look as considered and expensive as the hero shot.
+Every single imagePrompt (not just the hero scenes) must name at least two specific premium
+materials or craft techniques — not generic adjectives. Draw from or match the tier of: hand-cut
+or hand-carved stone, hand-stitched leather, nappa leather, suede, calfskin, gilt or gold-leaf
+trim, hand-rubbed oiled oak, walnut, rosewood, burl wood, brushed steel, milled aluminium,
+titanium, forged carbon fibre, mahogany panelling, book-matched veneer or glass, brass fittings,
+bronze, wrought iron, velvet upholstery, cashmere, silk, alcantara, hand-blown glass, Murano
+glass, polished teak, lacquered joinery, marble, onyx, platinum, sapphire crystal, guilloché,
+hand-knotted rug, patina. A prompt that only says "luxury" or "expensive" without naming the
+material has not met this bar and must be rewritten. This is checked automatically after
+generation — a script that fails it does not get saved.
 
 IMAGE PROMPT RULES (branded surfaces)
 Image models ignore "no text" and "no logos" instructions on the one surface of a product that
@@ -122,6 +135,37 @@ BIG NUMBERS
 bigNumber.value is what appears on screen in large type — keep it short ("$4.2M", "40", "12%").
 bigNumber.label is at most 5 words. Set bigNumber to null for scenes that carry no figure.`;
 
+/** "top of the market" kuralının otomatik denetimi — script.ts sistem promptundaki listeyle aynı. */
+const PREMIUM_MATERIAL_KEYWORDS = [
+  'hand-cut stone', 'hand-carved', 'hand-stitched', 'nappa leather', 'suede', 'calfskin',
+  'gilt', 'gold-leaf', 'gold leaf', 'hand-rubbed', 'oiled oak', 'walnut', 'rosewood', 'burl',
+  'brushed steel', 'milled aluminium', 'milled aluminum', 'titanium', 'forged carbon',
+  'carbon fibre', 'carbon fiber', 'mahogany', 'book-matched', 'veneer', 'brass', 'bronze',
+  'wrought iron', 'velvet', 'cashmere', 'silk', 'alcantara', 'hand-blown', 'murano',
+  'polished teak', 'teak', 'lacquer', 'marble', 'onyx', 'platinum', 'sapphire', 'guilloch',
+  'hand-knotted', 'patina', 'chrome',
+];
+
+function countPremiumMaterials(imagePrompt: string): number {
+  const lower = imagePrompt.toLowerCase();
+  return PREMIUM_MATERIAL_KEYWORDS.filter((keyword) => lower.includes(keyword)).length;
+}
+
+/** "top of the market" kuralını zorunlu kılar — yetersiz sahne varsa script hiç kaydedilmez. */
+function validateTopOfMarket(script: VideoScript): void {
+  const failing = script.scenes
+    .map((scene, index) => ({ index, count: countPremiumMaterials(scene.imagePrompt) }))
+    .filter(({ count }) => count < 2);
+
+  if (failing.length > 0) {
+    const list = failing.map(({ index }) => `sahne ${index + 1}`).join(', ');
+    throw new Error(
+      `"Top of the market" kuralı ihlal edildi (${list}): imagePrompt en az iki somut premium ` +
+        `malzeme/işçilik terimi içermeli (bkz. PREMIUM_MATERIAL_KEYWORDS). Konuyu yeniden üret.`,
+    );
+  }
+}
+
 function userPrompt(topic: string): string {
   const language =
     CONTENT_LANG === 'tr'
@@ -171,6 +215,8 @@ export async function generateScript(topic: string): Promise<VideoScript> {
   if (script.scenes.length < 8) {
     throw new Error(`Sadece ${script.scenes.length} sahne üretildi; en az 8 bekleniyor.`);
   }
+
+  validateTopOfMarket(script);
 
   return script;
 }
