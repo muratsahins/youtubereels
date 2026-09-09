@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:03,193
+Todo ano, um superiate consome dez por cento do seu próprio preço.
+
+2
+00:00:03,634 --> 00:00:08,487
+Você paga cento e cinquenta milhões de dólares pelo barco. Depois mais quinze milhões, todo ano.
+
+3
+00:00:08,812 --> 00:00:13,386
+Cerca de quarenta tripulantes vivem a bordo. Só os salários deles somam quatro milhões por ano.
+
+4
+00:00:13,711 --> 00:00:17,647
+Em velocidade de cruzeiro ele queima quinhentos litros de combustível por hora.
+
+5
+00:00:18,030 --> 00:00:22,732
+Uma vaga na costa do Mediterrâneo pode custar dez mil dólares por noite na alta temporada.
+
+6
+00:00:23,429 --> 00:00:27,666
+O seguro leva cerca de um por cento do valor do casco antes mesmo de sair do porto.
+
+7
+00:00:28,270 --> 00:00:33,181
+A cada cinco anos ele entra num estaleiro, e uma reforma completa pode chegar a vinte milhões.
+
+8
+00:00:33,785 --> 00:00:37,745
+Então a parte mais difícil de possuí-lo nunca foi assinar aquele primeiro cheque.

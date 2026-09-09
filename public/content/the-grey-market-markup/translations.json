@@ -1,0 +1,42 @@
+{
+  "es": [
+    "La boutique no te venderá este reloj. Él sí.",
+    "No es el fabricante, y no es un distribuidor autorizado. Es un vendedor privado con una caja fuerte.",
+    "Lo compró al precio de lista. El mismo precio que la boutique se negó a aceptarte a ti.",
+    "Esta tarde, te lo vende a ti por el triple de eso.",
+    "Esa prima no es una tarifa por el reloj. Es una tarifa por saltarte la lista de espera.",
+    "Mantener esa lista le cuesta dinero. Un vendedor serio tiene millones de dólares dormidos en una caja fuerte, sin generar nada hasta que alguien entra.",
+    "El fabricante no ve nada de ese sobreprecio. Cobró el precio de lista una vez, hace años, y siguió adelante.",
+    "Así que la lista de espera no solo retrasó la venta. Le entregó el precio a otra persona."
+  ],
+  "hi": [
+    "बुटीक आपको यह घड़ी नहीं बेचेगा। वह बेचेगा।",
+    "वह न तो निर्माता है, न अधिकृत डीलर। वह एक निजी डीलर है जिसके पास एक तिजोरी है।",
+    "उसने इसे लिस्ट प्राइस पर खरीदा था। वही कीमत जो बुटीक ने आपसे लेने से मना कर दिया था।",
+    "आज दोपहर, वह इसे आपको उसकी तीन गुनी कीमत पर बेचता है।",
+    "वह अतिरिक्त रकम घड़ी की फीस नहीं है। यह कतार छोड़ने की फीस है।",
+    "वह कतार बनाए रखना उसे पैसे खर्च कराता है। एक गंभीर डीलर तिजोरी में लाखों डॉलर सुलाकर रखता है, जब तक कोई अंदर न आए तब तक कुछ भी नहीं कमाता।",
+    "निर्माता को इस मार्कअप का एक हिस्सा भी नहीं मिलता। उसने बरसों पहले एक बार लिस्ट प्राइस वसूल किया और आगे बढ़ गया।",
+    "तो वेटिंग लिस्ट ने बिक्री को सिर्फ टाला नहीं। उसने कीमत किसी और को सौंप दी।"
+  ],
+  "pt-BR": [
+    "A boutique não vai te vender esse relógio. Ele vai.",
+    "Ele não é o fabricante, e não é um revendedor autorizado. É um negociante particular com um cofre.",
+    "Ele comprou pelo preço de tabela. O mesmo preço que a boutique se recusou a aceitar de você.",
+    "Hoje à tarde, ele vende para você por três vezes esse valor.",
+    "Esse ágio não é uma taxa pelo relógio. É uma taxa por pular a fila.",
+    "Manter essa fila custa dinheiro a ele. Um negociante sério mantém milhões de dólares dormindo num cofre, sem render nada até alguém aparecer.",
+    "O fabricante não vê nada desse ágio. Ele cobrou o preço de tabela uma vez, anos atrás, e seguiu em frente.",
+    "Então a lista de espera não só atrasou a venda. Ela entregou o preço para outra pessoa."
+  ],
+  "tr": [
+    "Butik size bu saati satmayacak. O satacak.",
+    "O ne üretici, ne de yetkili satıcı. Kasası olan özel bir satıcı.",
+    "Onu liste fiyatından satın aldı. Butiğin sizden almayı reddettiği aynı fiyattan.",
+    "Bu öğleden sonra, size bunu o fiyatın üç katına satıyor.",
+    "O fark saatin ücreti değil. Sırayı atlamanın ücreti.",
+    "O sırayı tutmak ona para kaybettiriyor. Ciddi bir satıcı, birisi gelene kadar hiçbir şey kazanmadan kasada milyonlarca dolar uyutuyor.",
+    "Üretici bu farktan hiçbir pay almıyor. Liste fiyatını yıllar önce bir kez tahsil etti ve yoluna devam etti.",
+    "Yani bekleme listesi satışı sadece geciktirmedi. Fiyatı başka birine devretti."
+  ]
+}

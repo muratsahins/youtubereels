@@ -1,0 +1,42 @@
+{
+  "es": [
+    "Este restaurante está reservado por un año. Pierde dinero.",
+    "Llegó la tercera estrella, y con ella un estándar que la cocina debe mantener cada noche.",
+    "El personal es lo primero. Una sala como esta funciona con casi dos empleados por cada comensal.",
+    "La sala se mantiene pequeña a propósito. Cuarenta cubiertos por noche, ni uno más.",
+    "Cada cubierto carga con mantelería, flores, una bodega que nadie bebe y productos que nunca salen de la cocina.",
+    "Cobra cuatrocientos por persona y el margen sigue siendo más delgado que el de la pizzería de la esquina.",
+    "Así que la estrella no es una recompensa por la cocina. Es un costo que la cocina acepta cargar.",
+    "El año de reservas no es la ganancia. El año de reservas es lo que cuesta conservar la estrella."
+  ],
+  "hi": [
+    "यह रेस्तरां एक साल के लिए बुक है। यह घाटे में चलता है।",
+    "तीसरा स्टार मिला, और उसके साथ एक ऐसा स्तर जिसे किचन को हर रात बनाए रखना पड़ता है।",
+    "स्टाफ पहले आता है। ऐसा कमरा लगभग हर मेहमान पर दो कर्मचारियों के अनुपात में चलता है।",
+    "कमरे को जानबूझकर छोटा रखा गया है। एक रात में चालीस सीटें, एक भी ज़्यादा नहीं।",
+    "हर सीट के साथ लिनन, फूल, एक तहखाना जिसे कोई नहीं पीता और ऐसी उपज जो कभी रसोई से बाहर नहीं जाती।",
+    "चार सौ प्रति व्यक्ति चार्ज कीजिए और मार्जिन अब भी सड़क की पिज़्ज़ेरिया से पतला ही रहता है।",
+    "तो यह स्टार खाना पकाने का इनाम नहीं है। यह एक ऐसी लागत है जिसे किचन उठाने के लिए राज़ी होती है।",
+    "साल भर की बुकिंग मुनाफा नहीं है। साल भर की बुकिंग असल में स्टार बनाए रखने की कीमत है।"
+  ],
+  "pt-BR": [
+    "Este restaurante está lotado por um ano. Ele perde dinheiro.",
+    "A terceira estrela chegou, e com ela um padrão que a cozinha precisa manter toda noite.",
+    "A equipe vem primeiro. Uma sala como essa opera com quase dois funcionários para cada convidado sentado.",
+    "A sala continua pequena de propósito. Quarenta lugares por noite, nem um a mais.",
+    "Cada lugar carrega roupa de mesa, flores, uma adega que ninguém bebe e produtos que nunca saem da cozinha.",
+    "Cobre quatrocentos por pessoa e a margem ainda é mais fina que a da pizzaria da esquina.",
+    "Então a estrela não é uma recompensa pela cozinha. É um custo que a cozinha aceita carregar.",
+    "O ano de reservas não é o lucro. O ano de reservas é o que custa manter a estrela."
+  ],
+  "tr": [
+    "Bu restoran bir yıl boyunca dolu. Zarar ediyor.",
+    "Üçüncü yıldız geldi, ve onunla birlikte mutfağın her gece koruması gereken bir standart geldi.",
+    "Önce personel geliyor. Böyle bir salon, oturan her misafire neredeyse iki çalışan oranıyla çalışıyor.",
+    "Salon bilerek küçük tutuluyor. Gecede kırk kuver, bir tane bile fazlası değil.",
+    "Her kuver, keten örtüler, çiçekler, kimsenin içmediği bir mahzen ve mutfaktan hiç çıkmayan ürünler taşıyor.",
+    "Kişi başı dört yüz alın, kâr marjı yine de köşedeki pizzacıdan daha ince.",
+    "Yani yıldız yemeğin bir ödülü değil. Mutfağın taşımayı kabul ettiği bir maliyet.",
+    "Yıl boyunca dolu olmak kâr değil. Yıl boyunca dolu olmak, yıldızı korumanın bedeli."
+  ]
+}

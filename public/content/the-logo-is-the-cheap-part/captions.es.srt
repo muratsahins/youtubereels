@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:03,170
+Nada aquí lleva un logo. Esa es la parte cara.
+
+2
+00:00:03,495 --> 00:00:07,755
+Un abrigo de cachemira con una etiqueta visible se vende por unos dos mil dólares.
+
+3
+00:00:08,081 --> 00:00:13,711
+La misma tela, sin marca, de una fábrica que abastece a ambos, cuesta cerca de seis.
+
+4
+00:00:14,153 --> 00:00:18,251
+Nunca estabas pagando por el logo. El logo estaba subvencionando el precio.
+
+5
+00:00:18,530 --> 00:00:24,021
+Una marca con logo envía millones de unidades al año. La discreta envía cien veces menos.
+
+6
+00:00:24,346 --> 00:00:28,770
+No hay volumen para repartir el costo, ni publicidad de la cual beneficiarse.
+
+7
+00:00:29,153 --> 00:00:33,147
+La etiqueta se paga a sí misma. Su ausencia tienes que pagarla tú.
+
+8
+00:00:33,588 --> 00:00:37,234
+Así que lo más barato de ese abrigo siempre fue el logo.

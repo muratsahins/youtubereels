@@ -1,0 +1,111 @@
+1
+00:00:00,000 --> 00:00:01,242
+This company has twelve
+
+2
+00:00:01,265 --> 00:00:03,077
+employees and exactly one client.
+
+3
+00:00:03,460 --> 00:00:03,994
+It is called a
+
+4
+00:00:04,063 --> 00:00:05,619
+family office, and it
+
+5
+00:00:05,677 --> 00:00:06,676
+exists to run one
+
+6
+00:00:06,734 --> 00:00:07,918
+fortune like a business.
+
+7
+00:00:08,429 --> 00:00:09,381
+Below about a hundred
+
+8
+00:00:09,427 --> 00:00:10,716
+million dollars in assets,
+
+9
+00:00:10,890 --> 00:00:12,051
+building one does not
+
+10
+00:00:12,109 --> 00:00:12,864
+make sense.
+
+11
+00:00:13,375 --> 00:00:14,547
+Running it costs roughly
+
+12
+00:00:14,640 --> 00:00:15,336
+one percent of the
+
+13
+00:00:15,371 --> 00:00:16,207
+money, every year.
+
+14
+00:00:16,590 --> 00:00:17,624
+So the office burns
+
+15
+00:00:17,670 --> 00:00:18,494
+a million dollars a
+
+16
+00:00:18,564 --> 00:00:19,830
+year before it earns anything.
+
+17
+00:00:20,213 --> 00:00:21,908
+The staff are not salespeople.
+
+18
+00:00:22,349 --> 00:00:23,208
+Nobody in the building
+
+19
+00:00:23,254 --> 00:00:23,858
+is trying to sell
+
+20
+00:00:23,905 --> 00:00:24,961
+the family a product.
+
+21
+00:00:25,402 --> 00:00:25,982
+That is what the
+
+22
+00:00:26,064 --> 00:00:27,387
+fee actually buys:
+
+23
+00:00:27,712 --> 00:00:29,164
+advice with nothing standing
+
+24
+00:00:29,222 --> 00:00:30,394
+behind it. So:
+
+25
+00:00:30,417 --> 00:00:32,159
+twelve people, one client,
+
+26
+00:00:32,217 --> 00:00:33,157
+and a payroll that
+
+27
+00:00:33,192 --> 00:00:33,959
+only starts to make
+
+28
+00:00:33,993 --> 00:00:35,526
+sense above nine figures.

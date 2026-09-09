@@ -1,0 +1,86 @@
+{
+  "title": "This $500K racehorse loses money every single month",
+  "description": "A racehorse that costs half a million dollars and loses money almost every month it's owned. The real payoff isn't the racing — it's what a champion is worth once it retires to stud.",
+  "tags": [
+    "racehorse",
+    "horse racing",
+    "luxury",
+    "economics",
+    "bloodstock",
+    "money",
+    "wealth",
+    "stud farm",
+    "investing",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "This racehorse cost half a million dollars. It loses money every month.",
+      "imagePrompt": "A gleaming thoroughbred racehorse with a glossy dark bay coat and hand-plaited mane standing in profile inside a sunlit hand-laid brick stable yard, a dark oiled-timber stable roof overhang in shadow filling the top third, no visible people",
+      "stockQuery": "thoroughbred racehorse stable",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "$500K",
+        "label": "purchase price"
+      }
+    },
+    {
+      "narration": "Feed, training, stabling, veterinary care and a private groom all run every single month regardless of results.",
+      "imagePrompt": "Interior of an immaculate private stable aisle with hand-turned oak stall doors and polished brass fittings, fresh straw bedding in bright daylight from a high window, dark exposed oak roof beams in shadow above, no people",
+      "stockQuery": "private stable aisle",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "Monthly upkeep alone runs about fifteen thousand dollars.",
+      "imagePrompt": "Close view of folded wool stable blankets and a hand-stitched leather halter with brass buckles laid across a glossy oak stall door in bright daylight, dark barn roof structure in shadow above, no people, no visible text",
+      "stockQuery": "stable grooming equipment",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "$15K",
+        "label": "monthly upkeep"
+      }
+    },
+    {
+      "narration": "Fewer than one in ten racehorses ever earns back its purchase price.",
+      "imagePrompt": "A thoroughbred racehorse with a glossy coat being led along a sunlit raked-gravel path beside white-painted timber paddock rails, seen from behind so no handler's face is visible, dark treeline in shadow filling the top third",
+      "stockQuery": "racehorse paddock path",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "10%",
+        "label": "ever profitable"
+      }
+    },
+    {
+      "narration": "Most owners never expect the horse's winnings alone to cover the stable bills.",
+      "imagePrompt": "Private manicured-turf training gallop track at a stud farm, white post-and-rail fencing stretching into bright morning daylight, dark distant treeline in shadow above, empty track, no people",
+      "stockQuery": "stud farm gallop track",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "A single stud fee for a champion can reach three hundred thousand dollars.",
+      "imagePrompt": "Extreme close-up of an elegant hand-cut limestone wall with a single arched window and a wrought-iron lantern beside it, the entrance and any signage entirely out of frame, bright daylight, dark slate roof eaves in shadow filling the top third, no people, no text",
+      "stockQuery": "stud farm office",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "$300K",
+        "label": "one stud fee"
+      }
+    },
+    {
+      "narration": "The real return isn't the racing. It's what a champion earns at stud afterward.",
+      "imagePrompt": "A glossy chestnut mare and foal grazing together in a sunlit white-rail paddock, manicured green pasture, dark distant tree line in shadow above, no people",
+      "stockQuery": "mare foal paddock",
+      "motion": "zoom-out",
+      "bigNumber": null
+    },
+    {
+      "narration": "So the horse was never really the investment. The bloodline is. Follow for more of these.",
+      "imagePrompt": "A thoroughbred racehorse with a glossy dark coat standing alone in a sunlit paddock beside white-painted timber rails, dark oiled-timber stable roofline in shadow filling the top third of the frame, no people",
+      "stockQuery": "racehorse paddock daylight",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

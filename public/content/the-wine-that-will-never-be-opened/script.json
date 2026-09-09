@@ -1,0 +1,86 @@
+{
+  "title": "A $40,000 bottle of wine that will never be opened",
+  "description": "A bottle that costs as much as a car, and will probably never be opened. Its value has nothing to do with how it tastes and everything to do with how rarely it exists.",
+  "tags": [
+    "fine wine",
+    "wine investing",
+    "luxury",
+    "economics",
+    "scarcity",
+    "money",
+    "wealth",
+    "collecting",
+    "auction",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "This bottle costs forty thousand dollars. Nobody will ever drink it.",
+      "imagePrompt": "Extreme close-up at a table in an ultra-fine-dining restaurant: a white-gloved sommelier's hand pouring a small tasting measure of deep garnet wine into a crystal glass, a pristine white linen tablecloth and a single flickering candle in the foreground, warm daylight catching the wine as it pours, the bottle itself held out of frame so no label is visible, the dimly lit dining room rising into shadow above with soft golden bokeh of distant tables, no faces, no people visible beyond the pouring hand",
+      "stockQuery": "wine bottle wax seal macro",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "$40K",
+        "label": "one bottle"
+      }
+    },
+    {
+      "narration": "It sits in a private cellar, climate-controlled, insured, and untouched.",
+      "imagePrompt": "An opulent centuries-old stone wine cellar behind an ornate wrought-iron gate, rows of bottles glowing warm amber in candlelight resting in hand-carved oak diamond racks, a single dramatic shaft of daylight falling from a hidden skylight onto the flagstone floor, deep shadow filling the vaulted stone ceiling above, no people",
+      "stockQuery": "opulent wine cellar",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "Only three hundred bottles from that vintage were ever filled.",
+      "imagePrompt": "Extreme wide low-angle view down an ancient stone-vaulted cellar corridor lined with individual hand-carved arched niches, most niches standing empty in shadow, only a few far niches each holding a single bottle in near-black silhouette lit by its own candle, a single warm shaft of golden daylight crossing the worn stone floor, the vaulted ceiling receding into darkness above, no people, no text, warm amber and gold tones throughout, no blue or teal light",
+      "stockQuery": "wine bottle punt velvet crate",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "300",
+        "label": "bottles ever made"
+      }
+    },
+    {
+      "narration": "A single bottle now trades for eight times its release price.",
+      "imagePrompt": "Extreme close-up of a bidder's arm and hand raised high holding an auction paddle in near-total silhouette against a bright spotlight in a grand marble auction hall, no markings legible on the paddle in the deep silhouette, a gilt chandelier glinting far above, the bottle a soft blurred silhouette on a distant velvet pedestal, soft silhouettes of other seated bidders in the gloom, no visible faces",
+      "stockQuery": "grand wine auction hall",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "8x",
+        "label": "since release price"
+      }
+    },
+    {
+      "narration": "Owners rarely pull the cork. Opening it destroys the investment.",
+      "imagePrompt": "A ceremonial toast among wine collectors, three figures seen entirely from behind raising crystal glasses of deep garnet wine beneath a wrought-iron candelabra in a grand ancient stone cellar chamber, the wine glowing where candlelight catches it, only the backs of their heads and shoulders visible, no faces visible at all, a dark stone vaulted ceiling above",
+      "stockQuery": "wine toast candlelight silhouette",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "Storing it properly costs two thousand dollars a year, before it's ever sold.",
+      "imagePrompt": "A heavy brushed-steel vault door with a gold-accented rim standing open at the entrance to an opulent stone wine cellar, warm daylight spilling across a polished marble threshold from a corridor beyond, a dark hand-cut stone archway in shadow above, no people",
+      "stockQuery": "wine cellar vault door gold",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "$2,000",
+        "label": "a year, just to store it"
+      }
+    },
+    {
+      "narration": "What sells at auction isn't the wine. It's the paperwork proving where it's been.",
+      "imagePrompt": "Extreme macro of a hand pressing an ornate brass seal into fresh molten wax on an aged provenance document, the wax glistening deep red in a shaft of daylight, the document's writing softly out of focus and entirely illegible, dark aged leather desk surface in shadow beyond, only the hand visible, no face",
+      "stockQuery": "wax seal document macro",
+      "motion": "zoom-out",
+      "bigNumber": null
+    },
+    {
+      "narration": "So the bottle was never made to be drunk. It was made to be traded. Follow for more of these.",
+      "imagePrompt": "A single rare bottle standing alone on an ornate stone pedestal at the center of a vast dark ancient cellar chamber, soaring vaulted stone arches receding into blackness on every side, one dramatic shaft of daylight falling from a distant high window to isolate the bottle, the immense scale of the architecture dwarfing it, a dark hand-cut vaulted stone ceiling filling the top third, no people",
+      "stockQuery": "wine bottle grand cellar scale",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

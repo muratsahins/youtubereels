@@ -1,0 +1,42 @@
+{
+  "es": [
+    "La mitad de las ventanas de esa torre nunca se han encendido.",
+    "Las unidades están vendidas. En algunas torres nuevas, una de cada cuatro direcciones no es la vida diaria de nadie.",
+    "Un apartamento de veinte millones de dólares no es refugio. Es dinero aparcado donde un extracto bancario no puede seguirlo.",
+    "Dejarlo vacío no es gratis. Impuestos y cargos superan el cuarto de millón de dólares al año.",
+    "El dueño quizás duerme ahí doce noches al año.",
+    "Las ciudades se dieron cuenta. Varias ahora gravan una vivienda dejada a oscuras, unos pocos por ciento de su valor, cada año.",
+    "El impuesto se paga. Un inquilino nunca fue el objetivo, y solo complicaría la salida.",
+    "Así que las luces siguen apagadas. El edificio está agotado, y nadie está en casa."
+  ],
+  "hi": [
+    "उस टावर की आधी खिड़कियाँ कभी जली ही नहीं।",
+    "यूनिट्स बिक चुकी हैं। कुछ नए टावरों में, हर चार पतों में से एक किसी की रोज़मर्रा की ज़िंदगी नहीं है।",
+    "दो करोड़ डॉलर का अपार्टमेंट कोई आश्रय नहीं है। यह ऐसा पैसा है जो वहाँ खड़ा है जहाँ बैंक स्टेटमेंट नहीं पहुँच सकता।",
+    "इसे खाली छोड़ना मुफ़्त नहीं है। टैक्स और शुल्क सालाना ढाई लाख डॉलर से ज़्यादा हो जाते हैं।",
+    "मालिक शायद साल में बारह रातें ही वहाँ सोता है।",
+    "शहरों ने इसे नोटिस किया। कई अब अंधेरी छोड़ी गई संपत्ति पर हर साल उसकी कीमत का कुछ प्रतिशत टैक्स लगाते हैं।",
+    "टैक्स चुका दिया जाता है। किराएदार कभी मकसद था ही नहीं, और वह बाहर निकलने को सिर्फ जटिल बनाता।",
+    "तो लाइट्स बंद रहती हैं। इमारत बिक चुकी है, और कोई घर पर नहीं है।"
+  ],
+  "pt-BR": [
+    "Metade das janelas daquela torre nunca foi acesa.",
+    "As unidades estão vendidas. Em algumas torres novas, um em cada quatro endereços não é a vida diária de ninguém.",
+    "Um apartamento de vinte milhões de dólares não é abrigo. É dinheiro estacionado onde um extrato bancário não consegue seguir.",
+    "Deixá-lo vazio não é de graça. Impostos e taxas passam de duzentos e cinquenta mil dólares por ano.",
+    "O dono talvez durma lá doze noites por ano.",
+    "As cidades notaram. Várias agora taxam um imóvel deixado no escuro, alguns por cento do valor, todo ano.",
+    "O imposto é pago. Um inquilino nunca foi o objetivo, e só complicaria a saída.",
+    "Então as luzes continuam apagadas. O prédio está esgotado, e ninguém está em casa."
+  ],
+  "tr": [
+    "O kulenin pencerelerinin yarısı hiç yanmadı.",
+    "Daireler satıldı. Bazı yeni kulelerde her dört adresten biri kimsenin günlük hayatı değil.",
+    "Yirmi milyon dolarlık bir daire barınak değil. Banka ekstresinin takip edemeyeceği bir yere park edilmiş para.",
+    "Onu boş bırakmak bedava değil. Vergi ve aidatlar yılda çeyrek milyon doları aşıyor.",
+    "Sahibi belki de yılda on iki gece orada uyuyor.",
+    "Şehirler bunu fark etti. Birçoğu artık karanlık bırakılan bir evi, değerinin birkaç yüzdesi kadar, her yıl vergilendiriyor.",
+    "Vergi ödeniyor. Kiracı hiçbir zaman amaç değildi, ve çıkışı sadece karmaşıklaştırırdı.",
+    "Yani ışıklar sönük kalıyor. Bina tükendi, ve evde kimse yok."
+  ]
+}

@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:03,077
+Essa empresa tem doze funcionários e exatamente um cliente.
+
+2
+00:00:03,460 --> 00:00:07,918
+Chama-se family office, e existe para administrar uma única fortuna como um negócio.
+
+3
+00:00:08,429 --> 00:00:12,864
+Abaixo de cerca de cem milhões de dólares em patrimônio, montar uma não faz sentido.
+
+4
+00:00:13,375 --> 00:00:16,207
+Administrá-la custa cerca de um por cento do dinheiro, todo ano.
+
+5
+00:00:16,590 --> 00:00:19,830
+Então o escritório queima um milhão de dólares por ano antes de ganhar qualquer coisa.
+
+6
+00:00:20,213 --> 00:00:24,961
+A equipe não são vendedores. Ninguém no prédio está tentando vender um produto para a família.
+
+7
+00:00:25,402 --> 00:00:29,756
+É isso que a taxa realmente compra: conselho sem nada por trás para empurrar.
+
+8
+00:00:30,197 --> 00:00:36,026
+Então: doze pessoas, um cliente, e uma folha de pagamento que só começa a fazer sentido acima de nove dígitos.

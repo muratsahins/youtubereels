@@ -1,0 +1,86 @@
+{
+  "title": "You can't just buy this $2M hypercar",
+  "description": "A car with a seven-figure price tag that isn't actually for sale to whoever pays it. The real qualification is loyalty, not money — and buyers who break the rules get cut off the list for good.",
+  "tags": [
+    "hypercar",
+    "supercar",
+    "luxury",
+    "economics",
+    "scarcity",
+    "money",
+    "wealth",
+    "car collecting",
+    "resale value",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "This car costs two million dollars. Money alone won't buy it.",
+      "imagePrompt": "Extreme low-angle macro of a hypercar's exposed-weave forged-carbon front splitter and wheel arch, glossy paint catching bright daylight, a hint of brushed titanium exhaust tip at the frame edge, badge and grille cropped entirely out of frame, dark underground garage ceiling in shadow filling the top third, no people",
+      "stockQuery": "hypercar garage macro",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "$2M",
+        "label": "sticker price"
+      }
+    },
+    {
+      "narration": "The maker doesn't sell to the highest bidder waiting outside the showroom. It sells to its most loyal collectors first.",
+      "imagePrompt": "Private showroom floor in polished marble terrazzo under bright daylight from a brushed-steel skylight frame, a single low-slung hypercar visible as a small distant silhouette at the far end of the vast empty hall, no surface detail legible at this distance, the floor reflecting the light, dark suspended ceiling truss in shadow above, no people",
+      "stockQuery": "private car showroom",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "Only twenty are built each year, worldwide.",
+      "imagePrompt": "Row of identical low-slung hypercars in hand-finished lacquer paint parked nose-to-tail inside a dim factory delivery bay, one shaft of daylight crossing the polished floor, dark riveted steel roof trusses in shadow above, badges cropped out of frame, no people",
+      "stockQuery": "hypercar delivery bay",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "20",
+        "label": "built per year"
+      }
+    },
+    {
+      "narration": "Resell it within a year, and it can fetch double the price.",
+      "imagePrompt": "Hypercar body panel and door sill in hand-finished lacquer paint photographed close, a forged alloy wheel spoke and carbon-ceramic brake caliper edge visible, glossy paint reflecting a bright window, private collector's garage visible softly blurred behind, dark exposed ceiling beams in shadow above, badge out of frame, no people",
+      "stockQuery": "sports car body panel",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "2x",
+        "label": "resale within a year"
+      }
+    },
+    {
+      "narration": "To even qualify for the list, a buyer usually must already own several of the brand's earlier cars.",
+      "imagePrompt": "Private collector's garage with an oiled hardwood floor and brushed-steel lift columns along the wall, several hypercars completely enveloped nose to tail in fitted satin dust covers so no wheel, badge or panel is visible anywhere, only smooth draped silhouettes, bright daylight, dark timber ceiling in shadow above, no people",
+      "stockQuery": "private car collection garage",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "Getting on that list can require ten million dollars of prior purchases.",
+      "imagePrompt": "Interior of an exclusive car dealership waiting lounge, a single hand-stitched leather armchair beside a brass-edged marble table in bright daylight from tall windows, dark panelled wall in shadow filling the top third, no people, no signage",
+      "stockQuery": "car dealership lounge",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "$10M",
+        "label": "in prior purchases"
+      }
+    },
+    {
+      "narration": "Most buyers never take it on public roads at all. It sits inside a private climate-controlled collection.",
+      "imagePrompt": "Hypercar under a satin-finish fitted dust cover with only a forged alloy wheel edge and headlight rim visible, bright daylight from a garage skylight, dark polished concrete ceiling in shadow above, badge out of frame, no people",
+      "stockQuery": "car dust cover garage",
+      "motion": "zoom-out",
+      "bigNumber": null
+    },
+    {
+      "narration": "So the two million on the invoice was never really the price. Loyalty was. Follow for more of these.",
+      "imagePrompt": "Single hypercar in near-total black silhouette parked alone inside a vast private collection hall with a polished terrazzo floor, backlit strongly by bright daylight so no badge or surface detail is legible, dark brushed-steel roof structure in shadow filling the top third, no people",
+      "stockQuery": "private car collection hall",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}

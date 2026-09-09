@@ -1,0 +1,42 @@
+{
+  "es": [
+    "Las personas más ricas que conoces reportan casi ningún ingreso.",
+    "Vender sus acciones activaría un impuesto por encima del veinte por ciento, así que nunca venden.",
+    "En vez de eso, un banco presta contra las acciones, a una tasa cercana a la que pagan gobiernos enteros.",
+    "El préstamo no es ingreso. Los préstamos no se gravan en ningún lado.",
+    "Viven de dinero prestado y nunca tocan el activo que hay detrás.",
+    "Las acciones siguen creciendo todo el tiempo, con la deuda quietamente detrás de ellas.",
+    "En Estados Unidos, al morir la base del costo se reinicia, y la ganancia que nadie gravó desaparece.",
+    "Así que el número en el cheque de pago nunca fue realmente el punto."
+  ],
+  "hi": [
+    "आप जिन सबसे अमीर लोगों को जानते हैं वे लगभग कोई आय दिखाते ही नहीं।",
+    "अपने शेयर बेचने से बीस प्रतिशत से ज़्यादा का टैक्स बिल आ जाता, तो वे कभी बेचते नहीं।",
+    "इसके बजाय एक बैंक उस स्टॉक के बदले उधार देता है, लगभग उतनी ही दर पर जितनी पूरी सरकारें चुकाती हैं।",
+    "यह लोन आय नहीं है। लोन कहीं भी टैक्स के दायरे में नहीं आते।",
+    "वे उधार लिए पैसे पर जीते हैं और कभी उसके पीछे की असली संपत्ति को छूते नहीं।",
+    "इस दौरान शेयर लगातार बढ़ते रहते हैं, और कर्ज़ चुपचाप उनके पीछे बैठा रहता है।",
+    "अमेरिका में, मृत्यु के समय कॉस्ट बेसिस रीसेट हो जाता है, और वह मुनाफा जिस पर कभी टैक्स नहीं लगा, गायब हो जाता है।",
+    "तो पेचेक पर लिखा नंबर असल में कभी मुद्दा था ही नहीं।"
+  ],
+  "pt-BR": [
+    "As pessoas mais ricas que você conhece declaram quase nenhuma renda.",
+    "Vender suas ações geraria um imposto acima de vinte por cento, então eles nunca vendem.",
+    "Em vez disso, um banco empresta contra as ações, a uma taxa próxima à que governos inteiros pagam.",
+    "O empréstimo não é renda. Empréstimos não são tributados em lugar nenhum.",
+    "Eles vivem de dinheiro emprestado e nunca tocam no ativo por trás dele.",
+    "As ações continuam se valorizando o tempo todo, com a dívida quietamente por trás delas.",
+    "Nos Estados Unidos, na morte o custo de base é resetado, e o ganho que ninguém nunca tributou desaparece.",
+    "Então o número no contracheque nunca foi realmente o ponto."
+  ],
+  "tr": [
+    "Tanıdığınız en zengin insanlar neredeyse hiç gelir beyan etmiyor.",
+    "Hisselerini satmak yüzde yirminin üzerinde bir vergi faturası doğururdu, bu yüzden hiç satmıyorlar.",
+    "Bunun yerine bir banka, hisse karşılığında, koca hükümetlerin ödediğine yakın bir faizle borç veriyor.",
+    "Kredi gelir sayılmıyor. Krediler hiçbir yerde vergilendirilmiyor.",
+    "Borç alınan parayla yaşıyorlar ve arkasındaki varlığa hiç dokunmuyorlar.",
+    "Hisseler bu süre boyunca büyümeye devam ediyor, borç da sessizce arkalarında duruyor.",
+    "Amerika'da, ölümde maliyet esası sıfırlanıyor, ve hiç vergilendirilmemiş kazanç ortadan kayboluyor.",
+    "Yani maaş bordrosundaki rakam hiçbir zaman gerçekten asıl mesele değildi."
+  ]
+}

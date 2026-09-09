@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:02,961
+Bu mağaza neredeyse hiçbir şey satmıyor. Sorunlu değil.
+
+2
+00:00:03,402 --> 00:00:08,557
+Perakende alanının yılda metrekaresi binlerce dolara kiralandığı bir köşede duruyor.
+
+3
+00:00:09,160 --> 00:00:15,244
+Bir mağaza, bir kat, bir yıl, ve sadece kira sekiz haneli rakamlara ulaşıyor.
+
+4
+00:00:15,627 --> 00:00:21,223
+Bunu sadece satışla karşılamak için, açık olduğu her dört dakikada bir çanta satması gerekirdi.
+
+5
+00:00:21,548 --> 00:00:26,912
+Satmıyor. Sakin bir salı günü, bir avuç insan bir şeyler alıyor.
+
+6
+00:00:27,237 --> 00:00:33,785
+Şirket bunu biliyor. İç yazışmalarda kira perakende değil, pazarlama kalemine kaydediliyor.
+
+7
+00:00:34,226 --> 00:00:40,589
+Markanın kazandığının onda biri kadarı, var olduğunu söylemeye gidiyor, ve bu köşe sahip olduğu en yüksek sesli şey.
+
+8
+00:00:40,972 --> 00:00:46,336
+Yani mağaza size bir şey satmakta başarısız olmuyor. Satmak zaten hiçbir zaman amacı değildi.

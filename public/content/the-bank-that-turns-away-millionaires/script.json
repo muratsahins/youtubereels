@@ -1,0 +1,86 @@
+{
+  "title": "Why some banks won't open your account under $10M",
+  "description": "A bank that turns away million-dollar depositors because a million dollars isn't the threshold. Private banking exists for a tier of wealth most people never see — and the fee for admission is silence, not cash.",
+  "tags": [
+    "private banking",
+    "wealth management",
+    "luxury",
+    "economics",
+    "high net worth",
+    "money",
+    "wealth",
+    "family office",
+    "investing",
+    "anatomy of wealth"
+  ],
+  "scenes": [
+    {
+      "narration": "Walk into this bank with a million dollars. They'll turn you away.",
+      "imagePrompt": "Interior of a private bank reception desk in polished dark marble with hand-finished brass fittings, bright daylight from tall windows, a dark gold-leaf coffered ceiling in shadow filling the top third, no people, no signage",
+      "stockQuery": "private bank lobby",
+      "motion": "zoom-in",
+      "bigNumber": {
+        "value": "$1M",
+        "label": "not enough to qualify"
+      }
+    },
+    {
+      "narration": "Private banking here starts at a minimum most millionaires never reach.",
+      "imagePrompt": "A private bank vault corridor lined with hand-rubbed walnut panelling, bright daylight falling from a hidden skylight onto a polished limestone floor, dark vaulted ceiling in shadow above, no people",
+      "stockQuery": "bank vault corridor",
+      "motion": "pan-right",
+      "bigNumber": null
+    },
+    {
+      "narration": "The entry threshold typically starts around ten million dollars in assets.",
+      "imagePrompt": "Close view of a heavy brushed-stainless-steel private bank vault door with a brass locking wheel standing ajar, warm daylight spilling in from a corridor, dark stone archway in shadow filling the top third, no people",
+      "stockQuery": "bank vault door",
+      "motion": "zoom-out",
+      "bigNumber": {
+        "value": "$10M",
+        "label": "minimum to qualify"
+      }
+    },
+    {
+      "narration": "Clients above that line pay a management fee near one percent a year.",
+      "imagePrompt": "Private bank meeting room with a single book-matched marble table and hand-stitched leather chairs in bright daylight from floor-to-ceiling windows, dark walnut-panelled wall in shadow above, no people, no documents visible",
+      "stockQuery": "private bank meeting room",
+      "motion": "pan-left",
+      "bigNumber": {
+        "value": "1%",
+        "label": "annual fee, assets managed"
+      }
+    },
+    {
+      "narration": "In exchange, a single banker handles everything: tax, property, even art purchases.",
+      "imagePrompt": "Private banker's oiled mahogany desk with a hand-stitched leather portfolio and a brass fountain pen laid on the polished wood, bright daylight through a tall window, dark bookshelf wall in shadow filling the top third, no people",
+      "stockQuery": "private banker desk",
+      "motion": "zoom-in",
+      "bigNumber": null
+    },
+    {
+      "narration": "That relationship alone can be worth over fifty thousand dollars a year in service.",
+      "imagePrompt": "Elegant private bank lounge with a single velvet armchair beside a marble side table with brass inlay, bright daylight, dark walnut-panelled wall in shadow above, no people, no signage",
+      "stockQuery": "private bank lounge",
+      "motion": "pan-right",
+      "bigNumber": {
+        "value": "$50K",
+        "label": "a year in service"
+      }
+    },
+    {
+      "narration": "The money was never really the product. The access was.",
+      "imagePrompt": "Private bank rooftop terrace with polished stone paving and a single outdoor seating area behind a brushed-steel railing, overlooking a city skyline in bright daylight, dark building silhouette in shadow filling the top third, no people",
+      "stockQuery": "private bank rooftop terrace",
+      "motion": "zoom-out",
+      "bigNumber": null
+    },
+    {
+      "narration": "So the account minimum was never really about the money in it. It was about who gets to call. Follow for more of these.",
+      "imagePrompt": "Interior of an empty private bank lobby with a polished marble floor reflecting bright daylight from tall arched windows, a dark gold-leaf coffered ceiling in shadow filling the top third of frame, no people, no signage",
+      "stockQuery": "private bank lobby empty",
+      "motion": "zoom-in",
+      "bigNumber": null
+    }
+  ]
+}
