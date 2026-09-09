@@ -12,7 +12,8 @@
     "all": "tsx src/pipeline/run.ts",
     "studio": "remotion studio src/remotion/index.ts",
     "typecheck": "tsc --noEmit",
-    "sheet": "tsx src/pipeline/upload-sheet.ts"
+    "sheet": "tsx src/pipeline/upload-sheet.ts",
+    "srt": "tsx src/pipeline/srt.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.116.0",

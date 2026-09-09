@@ -2,7 +2,7 @@ import { spawn } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 
-import { MUSIC_FILE } from '../config';
+import { BURN_CAPTIONS, MUSIC_FILE } from '../config';
 import type { AssetManifest, Captions, ShortProps, VideoScript } from '../types';
 import {
   OUT_DIR,
@@ -58,6 +58,7 @@ export function buildProps(slug: string): ShortProps {
     music,
     scenes,
     words: captions.words,
+    burnCaptions: BURN_CAPTIONS,
   };
 }
 

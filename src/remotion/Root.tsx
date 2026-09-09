@@ -16,6 +16,7 @@ const defaultProps: ShortProps = {
   music: null,
   scenes: [],
   words: [],
+  burnCaptions: false,
 };
 
 const contactSheetDefaults: ContactSheetProps = { images: [], labels: [] };

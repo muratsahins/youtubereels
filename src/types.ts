@@ -77,4 +77,5 @@ export type ShortProps = {
   music: string | null;
   scenes: RenderScene[];
   words: CaptionWord[];
+  burnCaptions: boolean;
 };

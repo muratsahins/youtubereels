@@ -11,12 +11,19 @@ export const IMAGE_PROVIDER = (process.env.IMAGE_PROVIDER ?? 'placeholder') as
   | 'placeholder'
   | 'replicate'
   | 'pexels'
+  | 'gemini'
+  | 'nvidia'
+  | 'fal'
   | 'manual';
 
 /** Kanal kuralı: her zaman en üst kalite model. .env yoksa bile flux-1.1-pro'ya düş. */
 export const REPLICATE_MODEL = process.env.REPLICATE_MODEL ?? 'black-forest-labs/flux-1.1-pro';
 
 export const CONTENT_LANG = (process.env.CONTENT_LANG ?? 'en') as 'en' | 'tr';
+
+/** Kanal kuralı (2026-09-03): altyazı artık gömülü değil, YouTube'a ayrı SRT track olarak
+ * yükleniyor (çoklu dil desteği için). .env'de BURN_CAPTIONS=true ile eski davranışa dönülebilir. */
+export const BURN_CAPTIONS = process.env.BURN_CAPTIONS === 'true';
 
 export const MUSIC_FILE = process.env.MUSIC_FILE?.trim() || null;
 

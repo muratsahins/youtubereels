@@ -106,6 +106,147 @@ async function pexelsImage(query: string, offset: number): Promise<Buffer> {
   return Buffer.from(await image.arrayBuffer());
 }
 
+type GeminiResponse = {
+  candidates?: {
+    content?: { parts?: { inlineData?: { mimeType?: string; data?: string } }[] };
+    finishReason?: string;
+  }[];
+};
+
+/** Gemini 2.5 Flash Image ("Nano Banana") — Google AI Studio ücretsiz katmanı: günde 500 görsel. */
+async function geminiImage(prompt: string, daylight: boolean): Promise<Buffer> {
+  const apiKey = requireEnv('GEMINI_API_KEY');
+  const suffix = daylight ? DAYLIGHT_STYLE_SUFFIX : STYLE_SUFFIX;
+
+  const response = await fetch(
+    'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent',
+    {
+      method: 'POST',
+      headers: { 'x-goog-api-key': apiKey, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: `${prompt}. ${suffix}` }] }],
+        generationConfig: {
+          responseModalities: ['TEXT', 'IMAGE'],
+          imageConfig: { aspectRatio: '9:16' },
+        },
+      }),
+    },
+  );
+
+  if (!response.ok) {
+    throw new Error(`Gemini ${response.status}: ${await response.text()}`);
+  }
+
+  const json = (await response.json()) as GeminiResponse;
+  const parts = json.candidates?.[0]?.content?.parts ?? [];
+  const imagePart = parts.find((p) => p.inlineData?.data);
+  if (!imagePart?.inlineData?.data) {
+    throw new Error(
+      `Gemini görsel döndürmedi (finishReason: ${json.candidates?.[0]?.finishReason ?? 'bilinmiyor'}).`,
+    );
+  }
+
+  return Buffer.from(imagePart.inlineData.data, 'base64');
+}
+
+type NvidiaResponse = {
+  artifacts?: { base64?: string; finishReason?: string }[];
+};
+
+/**
+ * NVIDIA NIM (build.nvidia.com) — flux.1-dev, ücretsiz geliştirici kredisi.
+ * Ücretsiz katmandaki paylaşımlı kuyruk bazen dakikalarca yanıt vermiyor; tek istek
+ * 60 saniyede kesilip en fazla 3 kez tekrar deniyor ki süreç sonsuza kadar asılı kalmasın.
+ */
+async function nvidiaImage(prompt: string, daylight: boolean): Promise<Buffer> {
+  const apiKey = requireEnv('NVIDIA_API_KEY');
+  const suffix = daylight ? DAYLIGHT_STYLE_SUFFIX : STYLE_SUFFIX;
+
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const response = await fetch('https://ai.api.nvidia.com/v1/genai/black-forest-labs/flux.1-dev', {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          prompt: `${prompt}. ${suffix}`,
+          mode: 'base',
+          width: 768,
+          height: 1344,
+          cfg_scale: 5,
+          steps: 50,
+          samples: 1,
+          seed: 0,
+        }),
+        signal: AbortSignal.timeout(60000),
+      });
+
+      if (!response.ok) {
+        throw new Error(`NVIDIA ${response.status}: ${await response.text()}`);
+      }
+
+      const json = (await response.json()) as NvidiaResponse;
+      const artifact = json.artifacts?.[0];
+      if (!artifact?.base64) {
+        throw new Error(
+          `NVIDIA görsel döndürmedi (finishReason: ${artifact?.finishReason ?? 'bilinmiyor'}).`,
+        );
+      }
+
+      return Buffer.from(artifact.base64, 'base64');
+    } catch (error) {
+      lastError =
+        error instanceof Error && error.name === 'TimeoutError'
+          ? new Error('NVIDIA 60 saniyede yanıt vermedi (ücretsiz kuyruk yoğun olabilir).')
+          : error;
+      if (attempt === 3) break;
+      const message = lastError instanceof Error ? lastError.message : String(lastError);
+      console.log(`[assets]   deneme ${attempt} başarısız (${message}); tekrar deneniyor…`);
+    }
+  }
+
+  throw lastError;
+}
+
+type FalResponse = {
+  images?: { url?: string }[];
+};
+
+/** fal.ai — flux-1.1-pro, ücretli ama ucuz/güvenilir (Replicate'in yerine). */
+async function falImage(prompt: string, daylight: boolean): Promise<Buffer> {
+  const apiKey = requireEnv('FAL_API_KEY');
+  const suffix = daylight ? DAYLIGHT_STYLE_SUFFIX : STYLE_SUFFIX;
+
+  const response = await fetch('https://fal.run/fal-ai/flux-pro/v1.1', {
+    method: 'POST',
+    headers: { Authorization: `Key ${apiKey}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      prompt: `${prompt}. ${suffix}`,
+      image_size: { width: 768, height: 1344 },
+      output_format: 'png',
+      num_images: 1,
+      safety_tolerance: '2',
+    }),
+    signal: AbortSignal.timeout(90000),
+  });
+
+  if (!response.ok) {
+    throw new Error(`fal.ai ${response.status}: ${await response.text()}`);
+  }
+
+  const json = (await response.json()) as FalResponse;
+  const url = json.images?.[0]?.url;
+  if (!url) throw new Error('fal.ai görsel URL döndürmedi.');
+
+  const image = await fetch(url);
+  if (!image.ok) throw new Error(`Görsel indirilemedi: ${image.status}`);
+  return Buffer.from(await image.arrayBuffer());
+}
+
 type Prediction = {
   id: string;
   status: 'starting' | 'processing' | 'succeeded' | 'failed' | 'canceled';
@@ -255,6 +396,15 @@ export async function generateAssets(
     if (IMAGE_PROVIDER === 'replicate') {
       console.log(`[assets] ${file} üretiliyor (${REPLICATE_MODEL}, ${daylight ? 'gündüz' : 'gece'})…`);
       fs.writeFileSync(target, await replicateImage(scene.imagePrompt, daylight));
+    } else if (IMAGE_PROVIDER === 'gemini') {
+      console.log(`[assets] ${file} üretiliyor (gemini-2.5-flash-image, ${daylight ? 'gündüz' : 'gece'})…`);
+      fs.writeFileSync(target, await geminiImage(scene.imagePrompt, daylight));
+    } else if (IMAGE_PROVIDER === 'nvidia') {
+      console.log(`[assets] ${file} üretiliyor (nvidia flux.1-dev, ${daylight ? 'gündüz' : 'gece'})…`);
+      fs.writeFileSync(target, await nvidiaImage(scene.imagePrompt, daylight));
+    } else if (IMAGE_PROVIDER === 'fal') {
+      console.log(`[assets] ${file} üretiliyor (fal.ai flux-1.1-pro, ${daylight ? 'gündüz' : 'gece'})…`);
+      fs.writeFileSync(target, await falImage(scene.imagePrompt, daylight));
     } else {
       // Eski senaryolarda stockQuery alanı olmayabilir; prompt'tan türetiyoruz.
       const stockQuery =

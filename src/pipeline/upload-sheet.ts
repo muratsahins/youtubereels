@@ -16,6 +16,31 @@ import {
 /** YouTube açıklama alanına gömülecek hashtag sayısı (fazlası spam sayılır). */
 const HASHTAG_COUNT = 3;
 
+const LANG_NAMES: Record<string, string> = {
+  en: 'İngilizce (video dili)',
+  es: 'İspanyolca',
+  hi: 'Hintçe',
+  'pt-BR': 'Portekizce (Brezilya)',
+  tr: 'Türkçe',
+};
+
+/** Slug klasöründeki captions*.srt dosyalarını dil adlarıyla listeler. */
+function captionFiles(slug: string): string[] {
+  const dir = contentDir(slug);
+  if (!fs.existsSync(dir)) return [];
+
+  return fs
+    .readdirSync(dir)
+    .filter((file) => /^captions(\.[a-zA-Z-]+)?\.srt$/.test(file))
+    .map((file) => {
+      const match = file.match(/^captions\.([a-zA-Z-]+)\.srt$/);
+      const lang = match ? match[1]! : 'en';
+      return { file, label: LANG_NAMES[lang] ?? lang };
+    })
+    .sort((a, b) => (a.label === 'İngilizce (video dili)' ? -1 : a.label.localeCompare(b.label)))
+    .map(({ file, label }) => `${label}: \`${path.join(contentDir(slug), file)}\``);
+}
+
 function hashtag(tag: string): string {
   const parts = tag.split(/[^a-z0-9]+/i).filter(Boolean);
   const joined = parts.map((p) => p.charAt(0).toUpperCase() + p.slice(1)).join('');
@@ -45,11 +70,22 @@ function sectionFor(slug: string): string[] {
   }
 
   const tags = script.tags.slice(0, HASHTAG_COUNT).map(hashtag).join(' ');
+  const captions = captionFiles(slug);
 
   return [
     `## ${slug}`,
     '',
     `**Dosya:** \`${mp4}\`  (${sizeMb} MB, ${duration} sn)`,
+    '',
+    '### Altyazı dosyaları',
+    '',
+    ...(captions.length > 0
+      ? [
+          'Altyazı içeriğe gömülü değil — Studio\'da "Altyazı ve ses" sekmesinden her dili ayrı yükle:',
+          '',
+          ...captions.map((line) => `- ${line}`),
+        ]
+      : ['Bu video için henüz .srt üretilmedi ("npm run srt -- --slug ' + slug + '").']),
     '',
     `### Başlık  _(${script.title.length}/100 karakter)_`,
     '',
@@ -88,7 +124,8 @@ export function writeUploadSheet(slugs: string[]): string {
     '- **Shorts:** dikey 1080×1920 ve 3 dakikanın altında olduğu için otomatik algılanır,',
     '  ayrı bir kutu işaretlemene gerek yok.',
     '- **Görünürlük:** taslak olarak yükleyip zamanla; hepsini aynı anda yayına alma.',
-    '- **Dil / altyazı:** altyazı videoya gömülü (kelime bazlı), ayrıca .srt yüklemene gerek yok.',
+    '- **Dil / altyazı:** altyazı videoya gömülü DEĞİL. Her video için aşağıda listelenen',
+    '  .srt dosyalarını Studio\'da "Altyazı ve ses" sekmesinden tek tek yükle.',
     '',
     '---',
     '',

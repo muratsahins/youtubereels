@@ -13,6 +13,7 @@ export const LuxuryShort: React.FC<ShortProps> = ({
   music,
   scenes,
   words,
+  burnCaptions,
 }) => {
   const { fps } = useVideoConfig();
   const totalFrames = Math.max(1, Math.round(durationSec * fps));
@@ -50,7 +51,7 @@ export const LuxuryShort: React.FC<ShortProps> = ({
       })}
 
       <Vignette />
-      <Captions words={words} />
+      {burnCaptions ? <Captions words={words} /> : null}
 
       {audio ? <Audio src={staticFile(audio)} /> : null}
       {music ? <Audio src={staticFile(music)} volume={0.1} loop /> : null}
