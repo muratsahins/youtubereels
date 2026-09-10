@@ -16,7 +16,7 @@
   "scenes": [
     {
       "narration": "Half the windows in that tower have never been switched on.",
-      "imagePrompt": "Night exterior of a very tall luxury residential tower, its glass and dark steel facade completely black and unlit from top to bottom except for a single small window glowing warm on a high floor, the vast majority of the building in total darkness, brass and bronze window mullions catching a faint reflection, the shot framed to end above the street-level entrance so no canopy or signage is visible, wet asphalt in the foreground reflecting the scarce light, deep blue-black sky, no people",
+      "imagePrompt": "Night exterior of a very tall Dubai-style luxury residential tower, its glass and dark steel facade completely black and unlit from top to bottom except for a single small window glowing warm on a high floor, the tower's crown ringed in warm gold architectural light against the black glass below, the vast majority of the building in total darkness, brass and bronze window mullions catching a faint reflection, the shot framed to end above the street-level entrance so no canopy or signage is visible, wet asphalt in the foreground reflecting the scarce light, deep blue-black sky, no people",
       "stockQuery": "apartment tower night",
       "motion": "zoom-in",
       "bigNumber": null
@@ -33,7 +33,7 @@
     },
     {
       "narration": "A twenty-million-dollar apartment is not shelter. It is money parked where a bank statement cannot follow.",
-      "imagePrompt": "Empty living room of a high-floor luxury apartment at night, floor-to-ceiling glass in brushed bronze frames, city lights far below, polished marble floor, a single leather armchair under a white dust sheet, one shaft of moonlight across the room, deep shadow in the corners",
+      "imagePrompt": "Vast empty living room of a high-floor luxury apartment styled like a seven-star hotel suite, a dark gold-leaf coffered ceiling filling the top third of the frame in shadow with a crystal chandelier glinting within it, floor-to-ceiling glass in gilt bronze frames overlooking a glittering Dubai-style night skyline, book-matched marble floor, a single silk-upholstered armchair under a white dust sheet, warm golden light pooling across the room, deep shadow in the corners",
       "stockQuery": "empty luxury apartment",
       "motion": "zoom-out",
       "bigNumber": {
@@ -53,7 +53,7 @@
     },
     {
       "narration": "The owner might sleep there twelve nights out of the year.",
-      "imagePrompt": "Made bed with a walnut headboard in an unused luxury apartment bedroom at night, crisp white linen without a single wrinkle, silk blackout curtains half drawn across a city view, bedside lamp switched off, cold blue light falling across the sheets, deep shadow",
+      "imagePrompt": "Opulent unused bedroom in a luxury apartment styled like a seven-star hotel suite, a carved gold-leaf headboard set against a dark upholstered wall filling the top third of the frame in shadow, a bed made with crisp white cotton sateen sheets pulled taut and tightly tucked with hospital corners, perfectly flat and smooth with no folds, draping or wrinkles anywhere, looking pristine and untouched as if never slept in, heavy velvet curtains held back with a gold tassel revealing a glittering Dubai-style night skyline, warm golden lamp light falling across the sheets, deep shadow",
       "stockQuery": "luxury bedroom night",
       "motion": "zoom-in",
       "bigNumber": {
@@ -63,7 +63,7 @@
     },
     {
       "narration": "Cities noticed. Several now tax a home left dark, a few percent of its value, every year.",
-      "imagePrompt": "Extreme close facade of a luxury apartment tower at dusk photographed straight on, filling the frame with dozens of identical windows in brushed bronze mullions against pale marble spandrel panels, every single window completely dark and unlit except for exactly one glowing warm window near the center, cold blue evening light, minimal composition, no people",
+      "imagePrompt": "Close facade of a soaring Dubai-style luxury residential tower at dusk, tiers of glass panels trimmed in brushed bronze mullions between bands of pale marble spandrel panels, dramatic warm sunset reflections streaking across the dark glass, every window completely dark and unlit except for exactly one glowing warm window near the center, a golden architectural light strip tracing the tower's edge, minimal composition, no people",
       "stockQuery": "apartment facade windows",
       "motion": "zoom-out",
       "bigNumber": {
@@ -73,14 +73,14 @@
     },
     {
       "narration": "The tax gets paid. A tenant was never the point, and would only complicate the exit.",
-      "imagePrompt": "Rows of closed brass mailboxes set into a walnut-panelled wall in the dim lobby of a luxury apartment tower, one small door slightly ajar, a single overhead light raking across the polished metal, deep shadow around the edges, macro detail",
+      "imagePrompt": "Wide view of a row of ornate brass mailboxes with fluted gold trim set into a gold-veined dark marble wall in the grand lobby of a Dubai-style luxury tower, a crystal wall sconce and a low vase of white orchids on a marble console beneath it, warm light glowing across the polished brass, a herringbone parquet floor reflecting the glow, deep shadow around the edges, no text, no people",
       "stockQuery": "brass mailboxes lobby",
       "motion": "pan-right",
       "bigNumber": null
     },
     {
       "narration": "So the lights stay off. The building is sold out, and nobody is home.",
-      "imagePrompt": "Night exterior of a tall luxury residential tower with bronze-framed glass and a marble-clad base, seen from across still black water, its facade completely black and unlit from top to bottom with no windows glowing at all, only a faint lobby glow at street level, the building mirrored in the dark water, minimal composition, no people",
+      "imagePrompt": "Night exterior of a soaring Dubai-style luxury residential tower with a bronze and marble-clad base, its glass windows completely black and unlit from top to bottom with only a slender gold architectural trim line tracing its vertical edges, a golden ring of light crowning its peak against a glittering Dubai skyline of lit towers behind it, seen from across still black water with the entire scene mirrored below, a warm lobby glow at street level, dramatic wide composition, no people",
       "stockQuery": "tower reflection water",
       "motion": "zoom-out",
       "bigNumber": null
