@@ -216,17 +216,17 @@ type FalResponse = {
   images?: { url?: string }[];
 };
 
-/** fal.ai — flux-1.1-pro, ücretli ama ucuz/güvenilir (Replicate'in yerine). */
+/** fal.ai — flux-1.1-pro ultra, ücretli ama ucuz/güvenilir (Replicate'in yerine). 2K'ya kadar çözünürlük, daha güçlü fotogerçekçilik. */
 async function falImage(prompt: string, daylight: boolean): Promise<Buffer> {
   const apiKey = requireEnv('FAL_API_KEY');
   const suffix = daylight ? DAYLIGHT_STYLE_SUFFIX : STYLE_SUFFIX;
 
-  const response = await fetch('https://fal.run/fal-ai/flux-pro/v1.1', {
+  const response = await fetch('https://fal.run/fal-ai/flux-pro/v1.1-ultra', {
     method: 'POST',
     headers: { Authorization: `Key ${apiKey}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
       prompt: `${prompt}. ${suffix}`,
-      image_size: { width: 768, height: 1344 },
+      aspect_ratio: '9:16',
       output_format: 'png',
       num_images: 1,
       safety_tolerance: '2',
@@ -403,7 +403,7 @@ export async function generateAssets(
       console.log(`[assets] ${file} üretiliyor (nvidia flux.1-dev, ${daylight ? 'gündüz' : 'gece'})…`);
       fs.writeFileSync(target, await nvidiaImage(scene.imagePrompt, daylight));
     } else if (IMAGE_PROVIDER === 'fal') {
-      console.log(`[assets] ${file} üretiliyor (fal.ai flux-1.1-pro, ${daylight ? 'gündüz' : 'gece'})…`);
+      console.log(`[assets] ${file} üretiliyor (fal.ai flux-1.1-pro-ultra, ${daylight ? 'gündüz' : 'gece'})…`);
       fs.writeFileSync(target, await falImage(scene.imagePrompt, daylight));
     } else {
       // Eski senaryolarda stockQuery alanı olmayabilir; prompt'tan türetiyoruz.
