@@ -17,14 +17,14 @@
   "scenes": [
     {
       "narration": "The boutique will not sell you this watch. He will.",
-      "imagePrompt": "Extreme macro of only a coiled brushed steel and titanium watch bracelet, the clasp end pressed right against the frame edge so no watch head, case or face appears anywhere in shot, resting on a hand-rubbed oiled walnut desk beside the edge of a closed brass-trimmed safe door, bright directional daylight raking across the polished links from a nearby window, a dark bronze safe panel filling the top third of the frame in shadow",
+      "imagePrompt": "Editorial hero macro of the crown side of a pristine stainless steel luxury sports watch resting on a hand-rubbed oiled walnut desk beside the edge of a closed brass-trimmed safe door, dramatic bright directional daylight raking across the fluted crown, ceramic bezel insert and polished lug facets, ultra-sharp product-photography detail on every knurl, screw and brushed surface, shallow depth of field melting into soft bokeh behind, only a sliver of the domed sapphire crystal edge visible at the frame border with the dial itself out of frame, a dark bronze safe panel filling the top third of the frame in shadow, magazine-quality still life lighting",
       "stockQuery": "luxury watch macro",
       "motion": "zoom-in",
       "bigNumber": null
     },
     {
       "narration": "He is not the manufacturer, and he is not an authorized dealer. He is a private dealer with a safe.",
-      "imagePrompt": "A heavy brass-trimmed steel vault safe door standing half open in a sunlit private office, thick round chrome locking bolts protruding from the edge of the door, spoked brushed steel handle wheel on its face, no dial and no numerals anywhere, dark mahogany panelling filling the top third of the frame in shadow, bright daylight raking across the bolt work, no people",
+      "imagePrompt": "Architectural-digest-quality hero shot of a gleaming circular vault door standing half open in the discreet private office of an independent dealer, a polished chrome multi-bolt locking mechanism radiating outward with museum-grade precision from a brushed steel spoked wheel, thick engineered steel catching warm directional daylight in sharp mirror-like reflections, a book-matched dark marble floor reflecting the door, a cognac-leather wingback chair and an antique brass desk lamp glowing softly at the edge of the frame, deep mahogany panelling filling the top third of the frame in shadow, no people",
       "stockQuery": "open safe office",
       "motion": "pan-right",
       "bigNumber": null
@@ -41,7 +41,7 @@
     },
     {
       "narration": "This afternoon, he sells it to you for three times that.",
-      "imagePrompt": "Overhead macro of two identical bespoke leather watch boxes side by side on a dark grey book-matched marble surface, both lids open just a crack so only a coiled brushed steel bracelet is visible spilling out of each box, no watch head, case or face fitting within either opening, one box lit warm and one lit cold under bright daylight, a solid dark bronze panel occupying the top third of the frame in shadow",
+      "imagePrompt": "Overhead shot of two identical open bespoke leather presentation boxes side by side on a dark grey book-matched marble surface, each cradling an elegant stainless steel luxury watch face-up, the domed sapphire crystals throwing a blinding sunburst reflection across each dial that washes out any numerals or text, brushed steel bracelets coiled around the cases, one watch lit warm and one lit cool under bright daylight, a solid dark bronze panel occupying the top third of the frame in shadow",
       "stockQuery": "two luxury watches",
       "motion": "pan-left",
       "bigNumber": {
@@ -58,7 +58,7 @@
     },
     {
       "narration": "Holding that queue costs him money. A serious dealer keeps millions of dollars asleep in a safe, earning nothing until somebody walks in.",
-      "imagePrompt": "Stacks of identical bespoke leather presentation boxes filling the brass-trimmed steel shelves of an open vault safe, closed lids, no dials and no watches visible anywhere, matte dark grey card and smooth leather texture, bright daylight raking across the stacked edges from a skylight, a dark bronze vault frame filling the top third of the frame in shadow, no people",
+      "imagePrompt": "Rows of bespoke leather presentation boxes in rich espresso and cognac tones stacked on gleaming chrome shelving inside an open circular bank-style vault, polished engineered-steel vault walls reflecting the stacks, bright daylight raking across the leather edges from an overhead skylight, a dark bronze vault door frame filling the top third of the frame in shadow, no people",
       "stockQuery": "watch boxes safe",
       "motion": "pan-right",
       "bigNumber": {
@@ -78,7 +78,7 @@
     },
     {
       "narration": "So the waiting list did not just delay the sale. It handed the price to somebody else.",
-      "imagePrompt": "A heavy brass-trimmed steel vault safe door swinging shut in a sunlit private office, thick chrome locking bolts sliding into the door frame, spoked brushed steel handle wheel catching bright daylight, no dial and no numerals, a dark mahogany panelled wall filling the top third of the frame in shadow, no people",
+      "imagePrompt": "A gleaming circular bank-style vault door swinging shut in a sunlit private office, a polished chrome multi-bolt mechanism sliding into the door frame, brushed steel spoked wheel catching bright daylight in sharp mirror-like reflections, a book-matched dark marble floor reflecting the door, deep mahogany panelling filling the top third of the frame in shadow, no people",
       "stockQuery": "safe door closing",
       "motion": "zoom-in",
       "bigNumber": null
