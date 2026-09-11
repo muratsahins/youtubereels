@@ -16,7 +16,7 @@
   "scenes": [
     {
       "narration": "Walk into this bank with a million dollars. They'll turn you away.",
-      "imagePrompt": "Interior of a private bank reception desk in polished dark marble with hand-finished brass fittings, bright daylight from tall windows, a dark gold-leaf coffered ceiling in shadow filling the top third, no people, no signage",
+      "imagePrompt": "Architectural-digest-quality hero shot of a private bank welcome desk carved from book-matched Portoro black marble with hand-finished brass edge trim, a tall seamless black marble art panel rising behind it with dramatic natural veining and no plaque, lettering or signage of any kind, a large arrangement of white orchids catching bright daylight from soaring windows and partly veiling the panel, a polished marble floor reflecting the room in perfect symmetry, a coffered gold-leaf ceiling filling the top third of the frame in shadow, no people, magazine-quality still life lighting",
       "stockQuery": "private bank lobby",
       "motion": "zoom-in",
       "bigNumber": {
@@ -26,14 +26,14 @@
     },
     {
       "narration": "Private banking here starts at a minimum most millionaires never reach.",
-      "imagePrompt": "A private bank vault corridor lined with hand-rubbed walnut panelling, bright daylight falling from a hidden skylight onto a polished limestone floor, dark vaulted ceiling in shadow above, no people",
+      "imagePrompt": "Editorial hero shot down a private bank vault corridor lined with hand-rubbed walnut panelling and brushed bronze wall sconces, bright daylight falling from a hidden skylight onto a polished book-matched limestone floor in perfect symmetry, a dark vaulted stone ceiling filling the top third of the frame in shadow, no people, ultra-sharp architectural detail",
       "stockQuery": "bank vault corridor",
       "motion": "pan-right",
       "bigNumber": null
     },
     {
       "narration": "The entry threshold typically starts around ten million dollars in assets.",
-      "imagePrompt": "Close view of a heavy brushed steel private bank vault door with a brass locking wheel standing ajar, warm daylight spilling in from a corridor, dark hand-carved stone archway in shadow filling the top third, no people",
+      "imagePrompt": "Editorial hero macro of a heavy brushed steel private bank vault door with a polished brass locking wheel standing ajar, warm daylight spilling across the engineered steel in sharp mirror-like highlights, a hand-carved dark stone archway filling the top third of the frame in shadow, no people, magazine-quality product photography",
       "stockQuery": "bank vault door",
       "motion": "zoom-out",
       "bigNumber": {
@@ -43,7 +43,7 @@
     },
     {
       "narration": "Clients above that line pay a management fee near one percent a year.",
-      "imagePrompt": "Private bank meeting room with a single book-matched marble table and hand-stitched leather chairs in bright daylight from floor-to-ceiling windows, dark walnut-panelled wall in shadow above, no people, no documents visible",
+      "imagePrompt": "Architectural-digest-quality hero shot of a private bank meeting room centered on a book-matched Calacatta marble table surrounded by hand-stitched cognac-leather chairs, bright daylight pouring through floor-to-ceiling windows, a dark walnut-panelled wall filling the top third of the frame in shadow, no people, no documents visible, museum-grade symmetry",
       "stockQuery": "private bank meeting room",
       "motion": "pan-left",
       "bigNumber": {
@@ -53,14 +53,14 @@
     },
     {
       "narration": "In exchange, a single banker handles everything: tax, property, even art purchases.",
-      "imagePrompt": "Private banker's oiled mahogany desk with a hand-stitched leather portfolio and a brass fountain pen laid on the polished wood, bright daylight through a tall window, dark bookshelf wall in shadow filling the top third, no people",
+      "imagePrompt": "Editorial hero shot of a private banker's hand-rubbed mahogany desk holding a hand-stitched leather portfolio and a solid brass fountain pen laid at a precise angle, bright daylight raking across the polished wood from a tall window, a dark floor-to-ceiling bookshelf wall filling the top third of the frame in shadow, no people, magazine-quality still life lighting",
       "stockQuery": "private banker desk",
       "motion": "zoom-in",
       "bigNumber": null
     },
     {
       "narration": "That relationship alone can be worth over fifty thousand dollars a year in service.",
-      "imagePrompt": "Elegant private bank lounge with a single velvet armchair beside a marble side table with brass inlay, bright daylight, dark walnut-panelled wall in shadow above, no people, no signage",
+      "imagePrompt": "Architectural-digest-quality hero shot of an elegant private bank lounge, a single cognac-velvet armchair beside a marble side table with brass inlay, bright daylight pooling across a herringbone parquet floor, a dark walnut-panelled wall filling the top third of the frame in shadow, no people, no signage",
       "stockQuery": "private bank lounge",
       "motion": "pan-right",
       "bigNumber": {
@@ -70,14 +70,14 @@
     },
     {
       "narration": "The money was never really the product. The access was.",
-      "imagePrompt": "Private bank rooftop terrace with hand-cut stone paving and a single outdoor seating area behind a brushed steel railing, overlooking a city skyline in bright daylight, dark building silhouette in shadow filling the top third, no people",
+      "imagePrompt": "Editorial hero shot of a private bank rooftop terrace with hand-cut stone paving and a single outdoor lounge seating area behind a brushed bronze railing, a glittering city skyline glowing under bright daylight beyond, a dark building silhouette filling the top third of the frame in shadow, no people, cinematic wide composition",
       "stockQuery": "private bank rooftop terrace",
       "motion": "zoom-out",
       "bigNumber": null
     },
     {
       "narration": "So the account minimum was never really about the money in it. It was about who gets to call. Follow for more of these.",
-      "imagePrompt": "Interior of an empty private bank lobby with a polished marble floor reflecting bright daylight from tall arched windows, a dark gold-leaf coffered ceiling in shadow filling the top third of frame, no people, no signage",
+      "imagePrompt": "Architectural-digest-quality hero shot of an empty private bank lobby, a book-matched marble floor reflecting bright daylight from soaring arched windows in perfect symmetry, a coffered gold-leaf ceiling filling the top third of the frame in shadow, no people, no signage, magazine-quality wide composition",
       "stockQuery": "private bank lobby empty",
       "motion": "zoom-in",
       "bigNumber": null
