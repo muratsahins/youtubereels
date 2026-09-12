@@ -16,7 +16,7 @@
   "scenes": [
     {
       "narration": "Walk into this bank with a million dollars. They'll turn you away.",
-      "imagePrompt": "Architectural-digest-quality hero shot of a private bank welcome desk carved from book-matched Portoro black marble with hand-finished brass edge trim, a tall seamless black marble art panel rising behind it with dramatic natural veining and no plaque, lettering or signage of any kind, a large arrangement of white orchids catching bright daylight from soaring windows and partly veiling the panel, a polished marble floor reflecting the room in perfect symmetry, a coffered gold-leaf ceiling filling the top third of the frame in shadow, no people, magazine-quality still life lighting",
+      "imagePrompt": "Editorial hero shot of an imposing private entrance, a pair of towering bronze doors with hand-cast floral relief panels standing fully closed, flanked by fluted stone pilasters, dramatic warm golden-hour daylight raking across the polished bronze in sharp mirror-like highlights, a book-matched dark marble threshold reflecting the doors in perfect symmetry, a plain carved stone pediment with ornamental scrollwork and no lettering, plaque or signage of any kind filling the top third of the frame in shadow, no people, cinematic architectural photography",
       "stockQuery": "private bank lobby",
       "motion": "zoom-in",
       "bigNumber": {
@@ -26,7 +26,7 @@
     },
     {
       "narration": "Private banking here starts at a minimum most millionaires never reach.",
-      "imagePrompt": "Editorial hero shot down a private bank vault corridor lined with hand-rubbed walnut panelling and brushed bronze wall sconces, bright daylight falling from a hidden skylight onto a polished book-matched limestone floor in perfect symmetry, a dark vaulted stone ceiling filling the top third of the frame in shadow, no people, ultra-sharp architectural detail",
+      "imagePrompt": "Architectural-digest-quality hero shot of a polished brass stanchion and cognac-velvet rope barrier stretched across a gleaming book-matched marble private bank lobby floor, bright daylight streaming through soaring windows beyond, a dark coffered ceiling filling the top third of the frame in shadow, no people, no signage, dramatic symmetrical composition",
       "stockQuery": "bank vault corridor",
       "motion": "pan-right",
       "bigNumber": null
@@ -53,7 +53,7 @@
     },
     {
       "narration": "In exchange, a single banker handles everything: tax, property, even art purchases.",
-      "imagePrompt": "Editorial hero shot of a private banker's hand-rubbed mahogany desk holding a hand-stitched leather portfolio and a solid brass fountain pen laid at a precise angle, bright daylight raking across the polished wood from a tall window, a dark floor-to-ceiling bookshelf wall filling the top third of the frame in shadow, no people, magazine-quality still life lighting",
+      "imagePrompt": "Editorial hero shot of a private banker's hand-rubbed mahogany partners desk, a hand-stitched leather portfolio open beside a small bronze sculpture and a rolled architectural blueprint tied with ribbon, a solid brass fountain pen laid at a precise angle in the foreground, dramatic bright daylight raking low across the polished wood from a tall window, a dark floor-to-ceiling bookshelf wall filling the top third of the frame in shadow, no people, magazine-quality still life composition",
       "stockQuery": "private banker desk",
       "motion": "zoom-in",
       "bigNumber": null
